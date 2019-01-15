@@ -10,7 +10,7 @@
 * 我的`我的`功能
 
 ## 更新记录
-2019.1.15 -- v0.0.1:提交1.0.0版本并完成框架搭建
+2019.1.15 -- v1.0.0:提交1.0.0版本并完成框架搭建
 
 ## 使用方式
 1.0 下载QingTutoring直接运行
@@ -45,9 +45,13 @@ APP Store线上相关作品,排名不分先后
 
 ## 相关截图
 ![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/52C106ED895E5421D7B7C9E0BE8CEA44.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/52C106ED895E5421D7B7C9E0BE8CEA44.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/52C106ED895E5421D7B7C9E0BE8CEA44.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/52C106ED895E5421D7B7C9E0BE8CEA44.png)
 
 # 你的Star是我更新的动力，使用过程如果有什么问题或者有什么新的建议，可以issues,我会及时回复大家
 # 觉得我写的不错，欢迎留言与打赏，金额随意，喝杯小茶,让我知道我的努力有价值，你的留言与打赏就是最好的反馈，让我更有动力继续分享。
 ![打赏](https://github.com/MicahelChan/CustomeApp/blob/master/picture1/scan.png)
+
 
 
