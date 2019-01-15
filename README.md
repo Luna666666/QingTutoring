@@ -1,7 +1,4 @@
 # QingTutoring
-![mahua](http://upload-images.jianshu.io/upload_images/259-0ad0d0bfc1c608b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-# QingTutoring
 
 ## QingTutoring是什么?
 一个基于Objective-C语言开发的高内聚低耦合的iOS开发项目
@@ -45,6 +42,9 @@ APP Store线上相关作品,排名不分先后
 * [ZhenjiangSchoolApp-SchoolDoctor](https://itunes.apple.com/cn/app/id1447600381?mt=8)
 * [BasicPublicHealth](https://itunes.apple.com/cn/app/id1325987590?mt=8)
 * [DCApp](https://itunes.apple.com/cn/app/id1250284233?mt=8)
+
+## 相关截图
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/52C106ED895E5421D7B7C9E0BE8CEA44.png)
 
 # 你的Star是我更新的动力，使用过程如果有什么问题或者有什么新的建议，可以issues,我会及时回复大家
 # 觉得我写的不错，欢迎留言与打赏，金额随意，喝杯小茶,让我知道我的努力有价值，你的留言与打赏就是最好的反馈，让我更有动力继续分享。
