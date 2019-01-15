@@ -1,0 +1,32 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+platform :ios do
+  desc "发布 蒲公英"
+    lane :beta_pgy do
+      gym(scheme: "QingTutoring",
+          export_method: "ad-hoc",
+          silent: true,  # 隐藏没有必要的信息
+          clean: true,  # 在构建前先clean
+          output_directory: "/Users/charles/Desktop/AppIpa/")
+      pgyer(api_key: "a4bf5d7b538da9802990d53ddf6b88c2",
+            user_key: "bbc083a45921d303f213a84646443ebe",
+            update_description:"update"
+           # password: "123456",
+           # install_type: "2"
+        )
+    end
+end
