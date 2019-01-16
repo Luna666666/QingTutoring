@@ -614,22 +614,6 @@
 		56315D7821EDBEC400018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				56315D7921EDBEC400018483 /* Cell */,
-				56315D7A21EDBEC400018483 /* Views */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D7921EDBEC400018483 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		56315D7A21EDBEC400018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -637,93 +621,29 @@
 		56315D8A21EDC5A900018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				56315D8B21EDC5A900018483 /* Cell */,
-				56315D8E21EDC5A900018483 /* View */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D8B21EDC5A900018483 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		56315D8E21EDC5A900018483 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		56315D9021EDC5DB00018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				56315D9121EDC5DB00018483 /* Cell */,
-				56315D9221EDC5DB00018483 /* View */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9121EDC5DB00018483 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		56315D9221EDC5DB00018483 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		56315D9321EDC60900018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				56315D9421EDC60900018483 /* Cell */,
-				56315D9521EDC60900018483 /* View */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9421EDC60900018483 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		56315D9521EDC60900018483 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		56315D9621EDC63000018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				56315D9721EDC63000018483 /* Cell */,
-				56315D9821EDC63000018483 /* View */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9721EDC63000018483 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		56315D9821EDC63000018483 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		56315D9921EDC64A00018483 /* Views */ = {
