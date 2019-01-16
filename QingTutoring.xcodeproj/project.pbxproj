@@ -354,13 +354,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5612145621EED654004E3A48 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
 		56315BCB21EDAD9500018483 /* QingTutoringManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,7 +733,6 @@
 		CE3DC5F3214F948600F32522 /* QingTutoring */ = {
 			isa = PBXGroup;
 			children = (
-				5612145621EED654004E3A48 /* Utility */,
 				CE3DC731214F999300F32522 /* ThirdPartys */,
 				CE3DC72F214F997900F32522 /* Resources */,
 				CE3DC6F0214F997300F32522 /* Public */,
