@@ -277,6 +277,90 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5612143D21EEC5E1004E3A48 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5612143E21EEC65A004E3A48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5612143F21EEC65F004E3A48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5612144021EEC663004E3A48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5612144121EEC6F7004E3A48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5612144221EEC6FB004E3A48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5612144421EEC76A004E3A48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5612144521EEC786004E3A48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5612144621EEC7BE004E3A48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5612144721EEC812004E3A48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5612144821EEC818004E3A48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5612144921EEC81B004E3A48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		56315BCB21EDAD9500018483 /* QingTutoringManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,10 +394,10 @@
 		56315C5D21EDB0C500018483 /* Curriculum */ = {
 			isa = PBXGroup;
 			children = (
+				5612144621EEC7BE004E3A48 /* Helper */,
 				56315D9621EDC63000018483 /* Views */,
 				56315C5E21EDB0C500018483 /* Controller */,
 				56315C6121EDB0C500018483 /* Model */,
-				56315C6A21EDB0C500018483 /* Helper */,
 			);
 			path = Curriculum;
 			sourceTree = "<group>";
@@ -335,20 +419,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		56315C6A21EDB0C500018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		56315C6B21EDB0C500018483 /* SubCurriculum */ = {
 			isa = PBXGroup;
 			children = (
-				56315D9921EDC64A00018483 /* Views */,
+				5612144921EEC81B004E3A48 /* Model */,
+				5612144821EEC818004E3A48 /* Views */,
+				5612144721EEC812004E3A48 /* Helper */,
 				56315C6C21EDB0C500018483 /* Controller */,
-				56315C6F21EDB0C500018483 /* Model */,
-				56315C7221EDB0C500018483 /* Helper */,
 			);
 			path = SubCurriculum;
 			sourceTree = "<group>";
@@ -358,20 +435,6 @@
 			children = (
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315C6F21EDB0C500018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315C7221EDB0C500018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 		56315CA921EDB22700018483 /* Find */ = {
@@ -386,10 +449,10 @@
 		56315CAA21EDB22700018483 /* SubFind */ = {
 			isa = PBXGroup;
 			children = (
+				5612144421EEC76A004E3A48 /* Helper */,
 				56315D9021EDC5DB00018483 /* Views */,
 				56315CAB21EDB22700018483 /* Controller */,
 				56315CAE21EDB22700018483 /* Model */,
-				56315CB321EDB22700018483 /* Helper */,
 			);
 			path = SubFind;
 			sourceTree = "<group>";
@@ -408,20 +471,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		56315CB321EDB22700018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		56315CB421EDB22700018483 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				5612144521EEC786004E3A48 /* Helper */,
 				56315D9321EDC60900018483 /* Views */,
 				56315CB521EDB22700018483 /* Controller */,
 				56315CB921EDB22700018483 /* Model */,
-				56315CBD21EDB22700018483 /* Helper */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -443,20 +499,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		56315CBD21EDB22700018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		56315CC421EDB25400018483 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				5612144221EEC6FB004E3A48 /* Helper */,
+				5612144121EEC6F7004E3A48 /* Model */,
 				56315D8A21EDC5A900018483 /* Views */,
 				56315CC521EDB25400018483 /* Controller */,
-				56315CD321EDB25400018483 /* Model */,
-				56315CD721EDB25400018483 /* Helper */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -471,27 +520,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		56315CD321EDB25400018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315CD721EDB25400018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		56315CE721EDB28900018483 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5612144021EEC663004E3A48 /* Helper */,
+				5612143F21EEC65F004E3A48 /* Views */,
+				5612143E21EEC65A004E3A48 /* Model */,
 				56315CE821EDB28900018483 /* Controller */,
-				56315CEC21EDB28900018483 /* Model */,
-				56315CED21EDB28900018483 /* View */,
-				56315CEE21EDB28900018483 /* Helper */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -504,27 +539,6 @@
 				56315DB121EDCA3A00018483 /* LoginViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315CEC21EDB28900018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315CED21EDB28900018483 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		56315CEE21EDB28900018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 		56315CF121EDB3A700018483 /* Tutorial */ = {
@@ -646,13 +660,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		56315D9921EDC64A00018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		56315D9A21EDC67200018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,7 +740,7 @@
 		CE3DC5F3214F948600F32522 /* QingTutoring */ = {
 			isa = PBXGroup;
 			children = (
-				CE3DC7D7214F99B100F32522 /* Utility */,
+				5612143D21EEC5E1004E3A48 /* Utility */,
 				CE3DC731214F999300F32522 /* ThirdPartys */,
 				CE3DC72F214F997900F32522 /* Resources */,
 				CE3DC6F0214F997300F32522 /* Public */,
@@ -893,13 +900,6 @@
 			name = ThirdPartys;
 			path = QingTutoring/ThirdPartys;
 			sourceTree = SOURCE_ROOT;
-		};
-		CE3DC7D7214F99B100F32522 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
-			sourceTree = "<group>";
 		};
 		CE3DC7DA214F9C6A00F32522 /* BaiduMapAPI */ = {
 			isa = PBXGroup;
