@@ -26,6 +26,7 @@
 		56315DAE21EDC98900018483 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DAC21EDC98900018483 /* MineViewController.xib */; };
 		56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DB021EDCA3A00018483 /* LoginViewController.m */; };
 		56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DB121EDCA3A00018483 /* LoginViewController.xib */; };
+		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
 		969CA0D49813D26537D8B5EB /* Pods_QingTutoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DA972E849F524C120C87C /* Pods_QingTutoring.framework */; };
 		CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F3214F997300F32522 /* QingTutoringNavigationController.m */; };
 		CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F5214F997300F32522 /* QingTutoringTabBarViewController.m */; };
@@ -130,6 +131,8 @@
 		56315DAF21EDCA3A00018483 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		56315DB021EDCA3A00018483 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		56315DB121EDCA3A00018483 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
+		566E820621F0819400296979 /* IdentityInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityInformationViewController.m; sourceTree = "<group>"; };
 		9168E75FA52E3ACB894CF503 /* Pods-QingTutoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.release.xcconfig"; sourceTree = "<group>"; };
 		CE2F0425214FAC82007FD607 /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
 		CE2F0426214FAC82007FD607 /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
@@ -530,6 +533,8 @@
 				56315DAF21EDCA3A00018483 /* LoginViewController.h */,
 				56315DB021EDCA3A00018483 /* LoginViewController.m */,
 				56315DB121EDCA3A00018483 /* LoginViewController.xib */,
+				566E820521F0819400296979 /* IdentityInformationViewController.h */,
+				566E820621F0819400296979 /* IdentityInformationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1231,6 +1236,7 @@
 				CE2F03E4214FA8BE007FD607 /* MBProgressHUD+TitleHandle.m in Sources */,
 				CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */,
 				CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */,
+				566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */,
 				CE2F03E7214FA8BE007FD607 /* QingTutoringPublicReusableView.m in Sources */,
 				CE2F03E9214FA8BE007FD607 /* ZSBadgeView.m in Sources */,
 				CE2F03EA214FA8BE007FD607 /* ZSProgressHUD.m in Sources */,

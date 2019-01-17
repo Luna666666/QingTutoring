@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "QingTutoringTabBarViewController.h"
 #import "LoginViewController.h"
+#import "IdentityInformationViewController.h"
 #import "ViewController.h"
 #import "ControlCenter.h"
 // 引入JPush功能所需头文件
