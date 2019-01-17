@@ -42,7 +42,7 @@
     [self initNotigficate:launchOptions];
     //初始化分享
     [self initShareSDK];
-    self.window.rootViewController = [QingTutoringTabBarViewController new];
+    self.window.rootViewController = [LoginViewController new];
     [self.window makeKeyAndVisible];
     return YES;
 }
