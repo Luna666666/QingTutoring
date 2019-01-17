@@ -33,10 +33,10 @@
     myVC.tabBarItem.title = @"我的";
     
     self.viewControllers = @[
-                             [self setNavWithVC:tutorialVC imgName:@"home_tab" selectImgName:@"tab_home_pressed"],
-                             [self setNavWithVC:curriculumVC imgName:@"application_tab" selectImgName:@"tab_application_pressed"],
-                             [self setNavWithVC:findVC imgName:@"message_tab" selectImgName:@"tab_message_select"],
-                             [self setNavWithVC:myVC imgName:@"mine_tab" selectImgName:@"tab_mine_select"],
+                             [self setNavWithVC:tutorialVC imgName:@"tutoring_tab" selectImgName:@"tutoring_tab-select"],
+                             [self setNavWithVC:curriculumVC imgName:@"course_tab" selectImgName:@"course_tab_select"],
+                             [self setNavWithVC:findVC imgName:@"found_tab" selectImgName:@"found_tab_select"],
+                             [self setNavWithVC:myVC imgName:@"my_tab" selectImgName:@"my_tab_select"],
                              ];
     UITabBar *bar = self.tabBar;
     bar.tintColor =[UIColor colorWithRed:0.082 green:0.188 blue:0.325 alpha:1.00];
