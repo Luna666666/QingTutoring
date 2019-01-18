@@ -43,7 +43,7 @@
     [self initNotigficate:launchOptions];
     //初始化分享
     [self initShareSDK];
-    self.window.rootViewController = [LoginViewController new];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[IdentityInformationViewController new]];
     [self.window makeKeyAndVisible];
     return YES;
 }

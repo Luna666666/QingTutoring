@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "QingTutoringTabBarViewController.h"
 
 @interface LoginViewController ()
 
@@ -16,11 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    
-  
+    self.navigationController.navigationBarHidden = YES;
+}
+- (IBAction)loginBtnClicked:(UIButton *)sender {
+    QingTutoringTabBarViewController *tabBarVC = [QingTutoringTabBarViewController new];
+    [App window].rootViewController = tabBarVC;
 }
 
 

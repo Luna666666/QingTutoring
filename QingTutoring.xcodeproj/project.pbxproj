@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C0A21F169C600C36CCD /* IdentyInfoHeadView.m */; };
+		56074C0E21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C0D21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m */; };
+		56074C1121F19EE900C36CCD /* identifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C1021F19EE900C36CCD /* identifyModel.m */; };
+		56074C1421F1BB0700C36CCD /* IdentyInfoFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C1321F1BB0700C36CCD /* IdentyInfoFootView.m */; };
 		56315BDA21EDAD9500018483 /* LYHControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BCE21EDAD9500018483 /* LYHControl.m */; };
 		56315BDB21EDAD9500018483 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BCF21EDAD9500018483 /* UIColor+HexColor.m */; };
 		56315BDC21EDAD9500018483 /* ControlCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BD021EDAD9500018483 /* ControlCenter.m */; };
@@ -97,6 +101,14 @@
 /* Begin PBXFileReference section */
 		25C3C4E95D6B62F2C32151C8 /* Pods-QingTutoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.debug.xcconfig"; sourceTree = "<group>"; };
 		454DA972E849F524C120C87C /* Pods_QingTutoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QingTutoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56074C0921F169C600C36CCD /* IdentyInfoHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentyInfoHeadView.h; sourceTree = "<group>"; };
+		56074C0A21F169C600C36CCD /* IdentyInfoHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentyInfoHeadView.m; sourceTree = "<group>"; };
+		56074C0C21F16DB200C36CCD /* IdentyInfoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentyInfoCollectionViewCell.h; sourceTree = "<group>"; };
+		56074C0D21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentyInfoCollectionViewCell.m; sourceTree = "<group>"; };
+		56074C0F21F19EE900C36CCD /* identifyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = identifyModel.h; sourceTree = "<group>"; };
+		56074C1021F19EE900C36CCD /* identifyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = identifyModel.m; sourceTree = "<group>"; };
+		56074C1221F1BB0700C36CCD /* IdentyInfoFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentyInfoFootView.h; sourceTree = "<group>"; };
+		56074C1321F1BB0700C36CCD /* IdentyInfoFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentyInfoFootView.m; sourceTree = "<group>"; };
 		56315BA621EDAB1500018483 /* QingTutoring-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QingTutoring-Prefix.pch"; sourceTree = "<group>"; };
 		56315BCC21EDAD9500018483 /* MainUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUserInfo.h; sourceTree = "<group>"; };
 		56315BCD21EDAD9500018483 /* MBProgressHUD+TitleHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+TitleHandle.h"; sourceTree = "<group>"; };
@@ -283,6 +295,8 @@
 		5612144B21EED511004E3A48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56074C0F21F19EE900C36CCD /* identifyModel.h */,
+				56074C1021F19EE900C36CCD /* identifyModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +311,12 @@
 		5612144D21EED518004E3A48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56074C1221F1BB0700C36CCD /* IdentyInfoFootView.h */,
+				56074C1321F1BB0700C36CCD /* IdentyInfoFootView.m */,
+				56074C0921F169C600C36CCD /* IdentyInfoHeadView.h */,
+				56074C0A21F169C600C36CCD /* IdentyInfoHeadView.m */,
+				56074C0C21F16DB200C36CCD /* IdentyInfoCollectionViewCell.h */,
+				56074C0D21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1222,8 +1242,10 @@
 				CE53AC792150845900066079 /* UIImage+RSKImageCropper.m in Sources */,
 				56315CE521EDB25400018483 /* UIImage+MadeInChina.m in Sources */,
 				CE53AC7A2150845900066079 /* WWAvatarPicker.m in Sources */,
+				56074C0E21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m in Sources */,
 				CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */,
 				CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */,
+				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
 				56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */,
 				CE2F03DA214FA8BD007FD607 /* FSUploadImageView.m in Sources */,
@@ -1238,10 +1260,12 @@
 				CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */,
 				566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */,
 				CE2F03E7214FA8BE007FD607 /* QingTutoringPublicReusableView.m in Sources */,
+				56074C1421F1BB0700C36CCD /* IdentyInfoFootView.m in Sources */,
 				CE2F03E9214FA8BE007FD607 /* ZSBadgeView.m in Sources */,
 				CE2F03EA214FA8BE007FD607 /* ZSProgressHUD.m in Sources */,
 				56315BDF21EDAD9500018483 /* MBProgressHUD+TitleHandle.m in Sources */,
 				56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */,
+				56074C1121F19EE900C36CCD /* identifyModel.m in Sources */,
 				56315BDB21EDAD9500018483 /* UIColor+HexColor.m in Sources */,
 				56315BDC21EDAD9500018483 /* ControlCenter.m in Sources */,
 				56315BDD21EDAD9500018483 /* CustomAlertView.m in Sources */,
