@@ -20,12 +20,6 @@
 		56315BE021EDAD9500018483 /* LYHUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BD621EDAD9500018483 /* LYHUIControl.m */; };
 		56315CE521EDB25400018483 /* UIImage+MadeInChina.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315CD921EDB25400018483 /* UIImage+MadeInChina.m */; };
 		56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315CDA21EDB25400018483 /* UITextField+MadeInChina.m */; };
-		56315D9E21EDC8D500018483 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315D9C21EDC8D500018483 /* TutorialViewController.m */; };
-		56315D9F21EDC8D500018483 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315D9D21EDC8D500018483 /* TutorialViewController.xib */; };
-		56315DA321EDC91000018483 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DA121EDC91000018483 /* CurriculumViewController.m */; };
-		56315DA421EDC91000018483 /* CurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DA221EDC91000018483 /* CurriculumViewController.xib */; };
-		56315DA821EDC94C00018483 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DA621EDC94C00018483 /* FindViewController.m */; };
-		56315DA921EDC94C00018483 /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DA721EDC94C00018483 /* FindViewController.xib */; };
 		56315DAD21EDC98900018483 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DAB21EDC98900018483 /* MineViewController.m */; };
 		56315DAE21EDC98900018483 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DAC21EDC98900018483 /* MineViewController.xib */; };
 		56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DB021EDCA3A00018483 /* LoginViewController.m */; };
@@ -36,6 +30,12 @@
 		563650C221F6E92E003CDE33 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BC21F6E92E003CDE33 /* HttpManager.m */; };
 		563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BE21F6E92E003CDE33 /* FSUploadImageView.m */; };
 		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
+		56B9457821F6F32600AF4287 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9457521F6F32600AF4287 /* TutorialViewController.m */; };
+		56B9457921F6F32600AF4287 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9457721F6F32600AF4287 /* TutorialViewController.xib */; };
+		56B9458121F6F3F100AF4287 /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9457E21F6F3F000AF4287 /* FindViewController.xib */; };
+		56B9458221F6F3F100AF4287 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9458021F6F3F000AF4287 /* FindViewController.m */; };
+		56B9458921F6F41B00AF4287 /* CurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */; };
+		56B9458A21F6F41B00AF4287 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9458721F6F41A00AF4287 /* CurriculumViewController.m */; };
 		969CA0D49813D26537D8B5EB /* Pods_QingTutoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DA972E849F524C120C87C /* Pods_QingTutoring.framework */; };
 		A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */; };
 		A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0D21F6DE2F0031E012 /* AppDelegate+OpenURL.m */; };
@@ -131,15 +131,6 @@
 		56315CD921EDB25400018483 /* UIImage+MadeInChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MadeInChina.m"; sourceTree = "<group>"; };
 		56315CDA21EDB25400018483 /* UITextField+MadeInChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MadeInChina.m"; sourceTree = "<group>"; };
 		56315CDB21EDB25400018483 /* UIImage+MadeInChina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MadeInChina.h"; sourceTree = "<group>"; };
-		56315D9B21EDC8D500018483 /* TutorialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
-		56315D9C21EDC8D500018483 /* TutorialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
-		56315D9D21EDC8D500018483 /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
-		56315DA021EDC91000018483 /* CurriculumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurriculumViewController.h; sourceTree = "<group>"; };
-		56315DA121EDC91000018483 /* CurriculumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurriculumViewController.m; sourceTree = "<group>"; };
-		56315DA221EDC91000018483 /* CurriculumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurriculumViewController.xib; sourceTree = "<group>"; };
-		56315DA521EDC94C00018483 /* FindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
-		56315DA621EDC94C00018483 /* FindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
-		56315DA721EDC94C00018483 /* FindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindViewController.xib; sourceTree = "<group>"; };
 		56315DAA21EDC98900018483 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		56315DAB21EDC98900018483 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		56315DAC21EDC98900018483 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +149,15 @@
 		563650BF21F6E92E003CDE33 /* LsyNetworkFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkFormData.h; sourceTree = "<group>"; };
 		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
 		566E820621F0819400296979 /* IdentityInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityInformationViewController.m; sourceTree = "<group>"; };
+		56B9457521F6F32600AF4287 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		56B9457621F6F32600AF4287 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		56B9457721F6F32600AF4287 /* TutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
+		56B9457E21F6F3F000AF4287 /* FindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindViewController.xib; sourceTree = "<group>"; };
+		56B9457F21F6F3F000AF4287 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		56B9458021F6F3F000AF4287 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurriculumViewController.xib; sourceTree = "<group>"; };
+		56B9458721F6F41A00AF4287 /* CurriculumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurriculumViewController.m; sourceTree = "<group>"; };
+		56B9458821F6F41A00AF4287 /* CurriculumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumViewController.h; sourceTree = "<group>"; };
 		9168E75FA52E3ACB894CF503 /* Pods-QingTutoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.release.xcconfig"; sourceTree = "<group>"; };
 		A4A03D0621F6CDAA0031E012 /* AppDelegate+InitThirdSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+InitThirdSDK.h"; sourceTree = "<group>"; };
 		A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+InitThirdSDK.m"; sourceTree = "<group>"; };
@@ -309,13 +309,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5612144C21EED515004E3A48 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		5612144D21EED518004E3A48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,60 +322,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5612144E21EED599004E3A48 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		5612144F21EED59F004E3A48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		5612145021EED5C2004E3A48 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		5612145121EED5DE004E3A48 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		5612145221EED5F7004E3A48 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		5612145321EED610004E3A48 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5612145421EED614004E3A48 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		5612145521EED617004E3A48 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		56315BCB21EDAD9500018483 /* QingTutoringManager */ = {
@@ -407,125 +351,27 @@
 		56315C5C21EDB0C500018483 /* Curriculum */ = {
 			isa = PBXGroup;
 			children = (
-				56315C5D21EDB0C500018483 /* Curriculum */,
-				56315C6B21EDB0C500018483 /* SubCurriculum */,
+				56B9458B21F6F41F00AF4287 /* Model */,
+				56B9458521F6F41A00AF4287 /* Controller */,
+				56B9458421F6F41500AF4287 /* Views */,
 			);
 			path = Curriculum;
-			sourceTree = "<group>";
-		};
-		56315C5D21EDB0C500018483 /* Curriculum */ = {
-			isa = PBXGroup;
-			children = (
-				5612145221EED5F7004E3A48 /* Helper */,
-				56315D9621EDC63000018483 /* Views */,
-				56315C5E21EDB0C500018483 /* Controller */,
-				56315C6121EDB0C500018483 /* Model */,
-			);
-			path = Curriculum;
-			sourceTree = "<group>";
-		};
-		56315C5E21EDB0C500018483 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				56315DA021EDC91000018483 /* CurriculumViewController.h */,
-				56315DA121EDC91000018483 /* CurriculumViewController.m */,
-				56315DA221EDC91000018483 /* CurriculumViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315C6121EDB0C500018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315C6B21EDB0C500018483 /* SubCurriculum */ = {
-			isa = PBXGroup;
-			children = (
-				5612145521EED617004E3A48 /* Views */,
-				5612145421EED614004E3A48 /* Helper */,
-				5612145321EED610004E3A48 /* Model */,
-				56315C6C21EDB0C500018483 /* Controller */,
-			);
-			path = SubCurriculum;
-			sourceTree = "<group>";
-		};
-		56315C6C21EDB0C500018483 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		56315CA921EDB22700018483 /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				56315CAA21EDB22700018483 /* SubFind */,
-				56315CB421EDB22700018483 /* Find */,
+				56B9458321F6F3F400AF4287 /* Model */,
+				56B9457D21F6F3F000AF4287 /* Controller */,
+				56B9457C21F6F3E900AF4287 /* Views */,
 			);
 			path = Find;
-			sourceTree = "<group>";
-		};
-		56315CAA21EDB22700018483 /* SubFind */ = {
-			isa = PBXGroup;
-			children = (
-				5612145021EED5C2004E3A48 /* Helper */,
-				56315D9021EDC5DB00018483 /* Views */,
-				56315CAB21EDB22700018483 /* Controller */,
-				56315CAE21EDB22700018483 /* Model */,
-			);
-			path = SubFind;
-			sourceTree = "<group>";
-		};
-		56315CAB21EDB22700018483 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315CAE21EDB22700018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315CB421EDB22700018483 /* Find */ = {
-			isa = PBXGroup;
-			children = (
-				5612145121EED5DE004E3A48 /* Helper */,
-				56315D9321EDC60900018483 /* Views */,
-				56315CB521EDB22700018483 /* Controller */,
-				56315CB921EDB22700018483 /* Model */,
-			);
-			path = Find;
-			sourceTree = "<group>";
-		};
-		56315CB521EDB22700018483 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				56315DA521EDC94C00018483 /* FindViewController.h */,
-				56315DA621EDC94C00018483 /* FindViewController.m */,
-				56315DA721EDC94C00018483 /* FindViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315CB921EDB22700018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		56315CC421EDB25400018483 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
 				5612144F21EED59F004E3A48 /* Model */,
-				5612144E21EED599004E3A48 /* Helper */,
 				56315D8A21EDC5A900018483 /* Views */,
 				56315CC521EDB25400018483 /* Controller */,
 			);
@@ -546,7 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				5612144D21EED518004E3A48 /* Views */,
-				5612144C21EED515004E3A48 /* Helper */,
 				5612144B21EED511004E3A48 /* Model */,
 				56315CE821EDB28900018483 /* Controller */,
 			);
@@ -568,123 +413,14 @@
 		56315CF121EDB3A700018483 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				56315CF221EDB3A700018483 /* Tutorial */,
+				56B9457B21F6F32E00AF4287 /* Views */,
+				56B9457A21F6F32A00AF4287 /* Model */,
+				56B9457421F6F32600AF4287 /* Controller */,
 			);
 			path = Tutorial;
-			sourceTree = "<group>";
-		};
-		56315CF221EDB3A700018483 /* Tutorial */ = {
-			isa = PBXGroup;
-			children = (
-				56315CF321EDB3A700018483 /* TutorialVC */,
-				56315D1D21EDB3A700018483 /* TutorialSubVC */,
-			);
-			path = Tutorial;
-			sourceTree = "<group>";
-		};
-		56315CF321EDB3A700018483 /* TutorialVC */ = {
-			isa = PBXGroup;
-			children = (
-				56315D7821EDBEC400018483 /* Views */,
-				56315CF421EDB3A700018483 /* Controller */,
-				56315CF921EDB3A700018483 /* Model */,
-				56315D1621EDB3A700018483 /* Helper */,
-			);
-			path = TutorialVC;
-			sourceTree = "<group>";
-		};
-		56315CF421EDB3A700018483 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				56315D9B21EDC8D500018483 /* TutorialViewController.h */,
-				56315D9C21EDC8D500018483 /* TutorialViewController.m */,
-				56315D9D21EDC8D500018483 /* TutorialViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315CF921EDB3A700018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315D1621EDB3A700018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		56315D1D21EDB3A700018483 /* TutorialSubVC */ = {
-			isa = PBXGroup;
-			children = (
-				56315D9A21EDC67200018483 /* Views */,
-				56315D1E21EDB3A700018483 /* Controller */,
-				56315D3B21EDB3A700018483 /* Model */,
-				56315D4721EDB3A700018483 /* Helper */,
-			);
-			path = TutorialSubVC;
-			sourceTree = "<group>";
-		};
-		56315D1E21EDB3A700018483 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		56315D3B21EDB3A700018483 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56315D4721EDB3A700018483 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		56315D7821EDBEC400018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		56315D8A21EDC5A900018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9021EDC5DB00018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9321EDC60900018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9621EDC63000018483 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		56315D9A21EDC67200018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -704,6 +440,78 @@
 				563650BD21F6E92E003CDE33 /* LsyNetworkManager.h */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		56B9457421F6F32600AF4287 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56B9457521F6F32600AF4287 /* TutorialViewController.m */,
+				56B9457621F6F32600AF4287 /* TutorialViewController.h */,
+				56B9457721F6F32600AF4287 /* TutorialViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		56B9457A21F6F32A00AF4287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56B9457B21F6F32E00AF4287 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56B9457C21F6F3E900AF4287 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56B9457D21F6F3F000AF4287 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56B9457E21F6F3F000AF4287 /* FindViewController.xib */,
+				56B9457F21F6F3F000AF4287 /* FindViewController.h */,
+				56B9458021F6F3F000AF4287 /* FindViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		56B9458321F6F3F400AF4287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56B9458421F6F41500AF4287 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56B9458521F6F41A00AF4287 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */,
+				56B9458721F6F41A00AF4287 /* CurriculumViewController.m */,
+				56B9458821F6F41A00AF4287 /* CurriculumViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		56B9458B21F6F41F00AF4287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6F4F35C1B0364434DF765755 /* Frameworks */ = {
@@ -857,7 +665,6 @@
 			children = (
 				CE3DC6F1214F997300F32522 /* PublicController */,
 				CE3DC6F8214F997300F32522 /* PublicHelper */,
-				CE3DC711214F997300F32522 /* PublicModel */,
 				CE3DC71C214F997300F32522 /* PublicView */,
 			);
 			path = Public;
@@ -882,13 +689,6 @@
 				56315BCB21EDAD9500018483 /* QingTutoringManager */,
 			);
 			path = PublicHelper;
-			sourceTree = "<group>";
-		};
-		CE3DC711214F997300F32522 /* PublicModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PublicModel;
 			sourceTree = "<group>";
 		};
 		CE3DC71C214F997300F32522 /* PublicView */ = {
@@ -1157,13 +957,13 @@
 				CEAD5CF821524B22003A64B3 /* ShareSDKUI.bundle in Resources */,
 				CEAD5CF921524B22003A64B3 /* ShareSDK.bundle in Resources */,
 				56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */,
-				56315D9F21EDC8D500018483 /* TutorialViewController.xib in Resources */,
-				56315DA921EDC94C00018483 /* FindViewController.xib in Resources */,
+				56B9458921F6F41B00AF4287 /* CurriculumViewController.xib in Resources */,
 				56315DAE21EDC98900018483 /* MineViewController.xib in Resources */,
 				CE3DC601214F948600F32522 /* LaunchScreen.storyboard in Resources */,
+				56B9458121F6F3F100AF4287 /* FindViewController.xib in Resources */,
+				56B9457921F6F32600AF4287 /* TutorialViewController.xib in Resources */,
 				CE3DC5FE214F948600F32522 /* Assets.xcassets in Resources */,
 				CE3DC5FC214F948600F32522 /* Main.storyboard in Resources */,
-				56315DA421EDC91000018483 /* CurriculumViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1261,10 +1061,8 @@
 				563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */,
 				56315BDE21EDAD9500018483 /* MainUserInfo.m in Sources */,
 				CE53AC772150845900066079 /* RSKTouchView.m in Sources */,
-				56315DA821EDC94C00018483 /* FindViewController.m in Sources */,
 				A4A03D1521F6E03E0031E012 /* UIUtility.m in Sources */,
 				CE53AC782150845900066079 /* UIApplication+RSKImageCropper.m in Sources */,
-				56315DA321EDC91000018483 /* CurriculumViewController.m in Sources */,
 				CE53AC792150845900066079 /* UIImage+RSKImageCropper.m in Sources */,
 				56315CE521EDB25400018483 /* UIImage+MadeInChina.m in Sources */,
 				CE53AC7A2150845900066079 /* WWAvatarPicker.m in Sources */,
@@ -1274,16 +1072,18 @@
 				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
 				56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */,
-				56315D9E21EDC8D500018483 /* TutorialViewController.m in Sources */,
 				56315BDA21EDAD9500018483 /* LYHControl.m in Sources */,
 				CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */,
 				CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */,
+				56B9457821F6F32600AF4287 /* TutorialViewController.m in Sources */,
 				CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */,
 				566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */,
 				A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */,
+				56B9458A21F6F41B00AF4287 /* CurriculumViewController.m in Sources */,
 				CE2F03E7214FA8BE007FD607 /* QingTutoringPublicReusableView.m in Sources */,
 				56074C1421F1BB0700C36CCD /* IdentyInfoFootView.m in Sources */,
 				CE2F03E9214FA8BE007FD607 /* ZSBadgeView.m in Sources */,
+				56B9458221F6F3F100AF4287 /* FindViewController.m in Sources */,
 				CE2F03EA214FA8BE007FD607 /* ZSProgressHUD.m in Sources */,
 				56315BDF21EDAD9500018483 /* MBProgressHUD+TitleHandle.m in Sources */,
 				56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */,
