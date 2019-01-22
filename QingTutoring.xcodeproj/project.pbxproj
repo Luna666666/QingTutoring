@@ -32,6 +32,10 @@
 		56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DB121EDCA3A00018483 /* LoginViewController.xib */; };
 		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
 		969CA0D49813D26537D8B5EB /* Pods_QingTutoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DA972E849F524C120C87C /* Pods_QingTutoring.framework */; };
+		A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */; };
+		A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0D21F6DE2F0031E012 /* AppDelegate+OpenURL.m */; };
+		A4A03D1421F6E03E0031E012 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D1021F6E03D0031E012 /* UIDevice-Hardware.m */; };
+		A4A03D1521F6E03E0031E012 /* UIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D1321F6E03D0031E012 /* UIUtility.m */; };
 		CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F3214F997300F32522 /* QingTutoringNavigationController.m */; };
 		CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F5214F997300F32522 /* QingTutoringTabBarViewController.m */; };
 		CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F7214F997300F32522 /* QingTutoringPublicViewController.m */; };
@@ -40,14 +44,12 @@
 		CE2F03DC214FA8BD007FD607 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC70E214F997300F32522 /* LsyNetworkFormData.m */; };
 		CE2F03DD214FA8BD007FD607 /* LsyNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC710214F997300F32522 /* LsyNetworkManager.m */; };
 		CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC71E214F997300F32522 /* CreateView.m */; };
-		CE2F03E4214FA8BE007FD607 /* MBProgressHUD+TitleHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC720214F997300F32522 /* MBProgressHUD+TitleHandle.m */; };
 		CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC722214F997300F32522 /* QingTutoringPublicCollectionCell.m */; };
 		CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC724214F997300F32522 /* QingTutoringPublicFootReusableView.m */; };
 		CE2F03E7214FA8BE007FD607 /* QingTutoringPublicReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC726214F997300F32522 /* QingTutoringPublicReusableView.m */; };
 		CE2F03E9214FA8BE007FD607 /* ZSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC72C214F997300F32522 /* ZSBadgeView.m */; };
 		CE2F03EA214FA8BE007FD607 /* ZSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC72E214F997300F32522 /* ZSProgressHUD.m */; };
 		CE3DC5F6214F948600F32522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC5F5214F948600F32522 /* AppDelegate.m */; };
-		CE3DC5F9214F948600F32522 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC5F8214F948600F32522 /* ViewController.m */; };
 		CE3DC5FC214F948600F32522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3DC5FA214F948600F32522 /* Main.storyboard */; };
 		CE3DC5FE214F948600F32522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3DC5FD214F948600F32522 /* Assets.xcassets */; };
 		CE3DC601214F948600F32522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3DC5FF214F948600F32522 /* LaunchScreen.storyboard */; };
@@ -146,6 +148,14 @@
 		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
 		566E820621F0819400296979 /* IdentityInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityInformationViewController.m; sourceTree = "<group>"; };
 		9168E75FA52E3ACB894CF503 /* Pods-QingTutoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.release.xcconfig"; sourceTree = "<group>"; };
+		A4A03D0621F6CDAA0031E012 /* AppDelegate+InitThirdSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+InitThirdSDK.h"; sourceTree = "<group>"; };
+		A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+InitThirdSDK.m"; sourceTree = "<group>"; };
+		A4A03D0C21F6DE2F0031E012 /* AppDelegate+OpenURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+OpenURL.h"; sourceTree = "<group>"; };
+		A4A03D0D21F6DE2F0031E012 /* AppDelegate+OpenURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+OpenURL.m"; sourceTree = "<group>"; };
+		A4A03D1021F6E03D0031E012 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		A4A03D1121F6E03D0031E012 /* UIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtility.h; sourceTree = "<group>"; };
+		A4A03D1221F6E03D0031E012 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		A4A03D1321F6E03D0031E012 /* UIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtility.m; sourceTree = "<group>"; };
 		CE2F0425214FAC82007FD607 /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
 		CE2F0426214FAC82007FD607 /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
 		CE2F0427214FAC82007FD607 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -168,8 +178,6 @@
 		CE3DC5F1214F948600F32522 /* QingTutoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingTutoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3DC5F4214F948600F32522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE3DC5F5214F948600F32522 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE3DC5F7214F948600F32522 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE3DC5F8214F948600F32522 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE3DC5FB214F948600F32522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3DC5FD214F948600F32522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3DC600214F948600F32522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -199,8 +207,6 @@
 		CE3DC710214F997300F32522 /* LsyNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LsyNetworkManager.m; sourceTree = "<group>"; };
 		CE3DC71D214F997300F32522 /* CreateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateView.h; sourceTree = "<group>"; };
 		CE3DC71E214F997300F32522 /* CreateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateView.m; sourceTree = "<group>"; };
-		CE3DC71F214F997300F32522 /* MBProgressHUD+TitleHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+TitleHandle.h"; sourceTree = "<group>"; };
-		CE3DC720214F997300F32522 /* MBProgressHUD+TitleHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+TitleHandle.m"; sourceTree = "<group>"; };
 		CE3DC721214F997300F32522 /* QingTutoringPublicCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QingTutoringPublicCollectionCell.h; sourceTree = "<group>"; };
 		CE3DC722214F997300F32522 /* QingTutoringPublicCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QingTutoringPublicCollectionCell.m; sourceTree = "<group>"; };
 		CE3DC723214F997300F32522 /* QingTutoringPublicFootReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QingTutoringPublicFootReusableView.h; sourceTree = "<group>"; };
@@ -380,20 +386,18 @@
 		56315BCB21EDAD9500018483 /* QingTutoringManager */ = {
 			isa = PBXGroup;
 			children = (
-				56315BCC21EDAD9500018483 /* MainUserInfo.h */,
-				56315BCD21EDAD9500018483 /* MBProgressHUD+TitleHandle.h */,
-				56315BCE21EDAD9500018483 /* LYHControl.m */,
-				56315BCF21EDAD9500018483 /* UIColor+HexColor.m */,
-				56315BD021EDAD9500018483 /* ControlCenter.m */,
-				56315BD121EDAD9500018483 /* LYHUIControl.h */,
-				56315BD221EDAD9500018483 /* CustomAlertView.m */,
-				56315BD321EDAD9500018483 /* MainUserInfo.m */,
-				56315BD421EDAD9500018483 /* LYHControl.h */,
-				56315BD521EDAD9500018483 /* MBProgressHUD+TitleHandle.m */,
-				56315BD621EDAD9500018483 /* LYHUIControl.m */,
 				56315BD721EDAD9500018483 /* ControlCenter.h */,
-				56315BD821EDAD9500018483 /* UIColor+HexColor.h */,
+				56315BD021EDAD9500018483 /* ControlCenter.m */,
 				56315BD921EDAD9500018483 /* CustomAlertView.h */,
+				56315BD221EDAD9500018483 /* CustomAlertView.m */,
+				56315BD421EDAD9500018483 /* LYHControl.h */,
+				56315BCE21EDAD9500018483 /* LYHControl.m */,
+				56315BD121EDAD9500018483 /* LYHUIControl.h */,
+				56315BD621EDAD9500018483 /* LYHUIControl.m */,
+				56315BCC21EDAD9500018483 /* MainUserInfo.h */,
+				56315BD321EDAD9500018483 /* MainUserInfo.m */,
+				56315BD821EDAD9500018483 /* UIColor+HexColor.h */,
+				56315BCF21EDAD9500018483 /* UIColor+HexColor.m */,
 			);
 			path = QingTutoringManager;
 			sourceTree = "<group>";
@@ -699,6 +703,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A4A03D0F21F6E03D0031E012 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A4A03D1221F6E03D0031E012 /* UIDevice-Hardware.h */,
+				A4A03D1021F6E03D0031E012 /* UIDevice-Hardware.m */,
+				A4A03D1121F6E03D0031E012 /* UIUtility.h */,
+				A4A03D1321F6E03D0031E012 /* UIUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		CE2F0423214FAC82007FD607 /* WWAvatarPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +773,7 @@
 		CE3DC5F3214F948600F32522 /* QingTutoring */ = {
 			isa = PBXGroup;
 			children = (
+				A4A03D0F21F6E03D0031E012 /* Utility */,
 				CE3DC731214F999300F32522 /* ThirdPartys */,
 				CE3DC72F214F997900F32522 /* Resources */,
 				CE3DC6F0214F997300F32522 /* Public */,
@@ -765,8 +781,10 @@
 				CE3DC626214F995D00F32522 /* Classes */,
 				CE3DC5F4214F948600F32522 /* AppDelegate.h */,
 				CE3DC5F5214F948600F32522 /* AppDelegate.m */,
-				CE3DC5F7214F948600F32522 /* ViewController.h */,
-				CE3DC5F8214F948600F32522 /* ViewController.m */,
+				A4A03D0621F6CDAA0031E012 /* AppDelegate+InitThirdSDK.h */,
+				A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */,
+				A4A03D0C21F6DE2F0031E012 /* AppDelegate+OpenURL.h */,
+				A4A03D0D21F6DE2F0031E012 /* AppDelegate+OpenURL.m */,
 				CE3DC5FA214F948600F32522 /* Main.storyboard */,
 				CE3DC5FD214F948600F32522 /* Assets.xcassets */,
 				CE3DC5FF214F948600F32522 /* LaunchScreen.storyboard */,
@@ -807,9 +825,9 @@
 		CE3DC6EA214F996B00F32522 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				56315BA621EDAB1500018483 /* QingTutoring-Prefix.pch */,
 				CE3DC6EB214F996B00F32522 /* AppMacro.h */,
 				CE3DC6ED214F996B00F32522 /* NotificationMacro.h */,
+				56315BA621EDAB1500018483 /* QingTutoring-Prefix.pch */,
 				CE3DC6EE214F996B00F32522 /* UtilsMacro.h */,
 				CE3DC6EF214F996B00F32522 /* VendorMacro.h */,
 			);
@@ -874,23 +892,23 @@
 		CE3DC71C214F997300F32522 /* PublicView */ = {
 			isa = PBXGroup;
 			children = (
-				CEAD5D0521524D3B003A64B3 /* ShareView.h */,
-				CEAD5D0321524D35003A64B3 /* ShareView.m */,
 				CE3DC71D214F997300F32522 /* CreateView.h */,
 				CE3DC71E214F997300F32522 /* CreateView.m */,
-				CE3DC71F214F997300F32522 /* MBProgressHUD+TitleHandle.h */,
-				CE3DC720214F997300F32522 /* MBProgressHUD+TitleHandle.m */,
+				56315BCD21EDAD9500018483 /* MBProgressHUD+TitleHandle.h */,
+				56315BD521EDAD9500018483 /* MBProgressHUD+TitleHandle.m */,
 				CE3DC721214F997300F32522 /* QingTutoringPublicCollectionCell.h */,
 				CE3DC722214F997300F32522 /* QingTutoringPublicCollectionCell.m */,
 				CE3DC723214F997300F32522 /* QingTutoringPublicFootReusableView.h */,
 				CE3DC724214F997300F32522 /* QingTutoringPublicFootReusableView.m */,
 				CE3DC725214F997300F32522 /* QingTutoringPublicReusableView.h */,
 				CE3DC726214F997300F32522 /* QingTutoringPublicReusableView.m */,
-				CE3DC729214F997300F32522 /* UIView+ZSCategory.h */,
+				CEAD5D0521524D3B003A64B3 /* ShareView.h */,
+				CEAD5D0321524D35003A64B3 /* ShareView.m */,
+				56315CDB21EDB25400018483 /* UIImage+MadeInChina.h */,
+				56315CD921EDB25400018483 /* UIImage+MadeInChina.m */,
 				56315CD821EDB25400018483 /* UITextField+MadeInChina.h */,
 				56315CDA21EDB25400018483 /* UITextField+MadeInChina.m */,
-				56315CD921EDB25400018483 /* UIImage+MadeInChina.m */,
-				56315CDB21EDB25400018483 /* UIImage+MadeInChina.h */,
+				CE3DC729214F997300F32522 /* UIView+ZSCategory.h */,
 				CE3DC72A214F997300F32522 /* ZSBadgeLabel.h */,
 				CE3DC72B214F997300F32522 /* ZSBadgeView.h */,
 				CE3DC72C214F997300F32522 /* ZSBadgeView.m */,
@@ -1088,6 +1106,7 @@
 		CE3DC5E9214F948600F32522 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QT;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Shensu;
 				TargetAttributes = {
@@ -1237,6 +1256,7 @@
 				56315BDE21EDAD9500018483 /* MainUserInfo.m in Sources */,
 				CE53AC772150845900066079 /* RSKTouchView.m in Sources */,
 				56315DA821EDC94C00018483 /* FindViewController.m in Sources */,
+				A4A03D1521F6E03E0031E012 /* UIUtility.m in Sources */,
 				CE53AC782150845900066079 /* UIApplication+RSKImageCropper.m in Sources */,
 				56315DA321EDC91000018483 /* CurriculumViewController.m in Sources */,
 				CE53AC792150845900066079 /* UIImage+RSKImageCropper.m in Sources */,
@@ -1255,10 +1275,10 @@
 				56315BDA21EDAD9500018483 /* LYHControl.m in Sources */,
 				CE2F03DD214FA8BD007FD607 /* LsyNetworkManager.m in Sources */,
 				CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */,
-				CE2F03E4214FA8BE007FD607 /* MBProgressHUD+TitleHandle.m in Sources */,
 				CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */,
 				CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */,
 				566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */,
+				A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */,
 				CE2F03E7214FA8BE007FD607 /* QingTutoringPublicReusableView.m in Sources */,
 				56074C1421F1BB0700C36CCD /* IdentyInfoFootView.m in Sources */,
 				CE2F03E9214FA8BE007FD607 /* ZSBadgeView.m in Sources */,
@@ -1266,14 +1286,15 @@
 				56315BDF21EDAD9500018483 /* MBProgressHUD+TitleHandle.m in Sources */,
 				56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */,
 				56074C1121F19EE900C36CCD /* identifyModel.m in Sources */,
+				A4A03D1421F6E03E0031E012 /* UIDevice-Hardware.m in Sources */,
 				56315BDB21EDAD9500018483 /* UIColor+HexColor.m in Sources */,
 				56315BDC21EDAD9500018483 /* ControlCenter.m in Sources */,
 				56315BDD21EDAD9500018483 /* CustomAlertView.m in Sources */,
 				56315BE021EDAD9500018483 /* LYHUIControl.m in Sources */,
 				CEAD5D0421524D35003A64B3 /* ShareView.m in Sources */,
 				56315DAD21EDC98900018483 /* MineViewController.m in Sources */,
-				CE3DC5F9214F948600F32522 /* ViewController.m in Sources */,
 				CE3DC604214F948600F32522 /* main.m in Sources */,
+				A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */,
 				CE3DC5F6214F948600F32522 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1459,7 +1480,7 @@
 					"\"${PODS_ROOT}/Headers/Public/WechatOpenSDK\"",
 				);
 				INFOPLIST_FILE = QingTutoring/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1501,7 +1522,7 @@
 					"\"${PODS_ROOT}/Headers/Public/WechatOpenSDK\"",
 				);
 				INFOPLIST_FILE = QingTutoring/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

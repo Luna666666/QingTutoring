@@ -29,14 +29,27 @@
 
 #define ZS_IMAGENAME(name) [UIImage imageNamed:name]//定义UIImage对象
 
-#define ISIphoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(812.f, 375.f), [UIScreen mainScreen].bounds.size))
+#define ISIphoneX ([UIUtility isIPhoneX])
 //导航栏高度
 #define navHeight (ISIphoneX?88:64)
- #define NavigateBarH (ISIphoneX?88:64)
+#define NavigateBarH (ISIphoneX?88:64)
 /**tabbar高度*/
 #define kTarbarHeight (ISIphoneX?83:49)
 #define ScaleWidth   (SCREEN_WIDTH / 375.0)
 #define ScaleHeight  (SCREEN_HEIGHT / 667.0)
+
+
+#define STATUS_BAR_HEIGHT (ISIphoneX?44.f:20.f) //状态栏高度
+#define NAV_BAR_HEIGHT 44.f // 导航栏高度
+#define SCREEN_TOP_INSET (STATUS_BAR_HEIGHT + NAV_BAR_HEIGHT)  // 屏幕上方
+#define SENSOR_HOUSING_HEIGHT (ISIphoneX?44.f:0) //传感器的高度
+#define HOME_INDICATOR_HEIGHT (ISIphoneX?34.f:0.f) //x以上下面home键高度
+#define TAB_BAR_HEIGHT (HOME_INDICATOR_HEIGHT + 49.f) //tab 高度
+
+#define SAFEAREA_FRINGE_HEIGHT   (IS_IPHONE_X ? 30.0 : 0)       ///< 刘海真实的高度
+#define SAFEAREA_TOP_MARGIN      SCREEN_TOP_INSET               ///< 安全区域上方高度
+#define SAFEAREA_BOTTOM_MARGIN   HOME_INDICATOR_HEIGHT          ///< 安全区域下方高度
+
 #define Margin1 10
 #define LRViewBorderRadius(View, Radius)\
 \
