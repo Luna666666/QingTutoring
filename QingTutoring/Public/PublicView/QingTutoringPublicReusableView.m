@@ -36,7 +36,6 @@
     return self;
 }
 -(void)goApplicationEditActions:(UIButton*)sender{
-    NSLog(@"ss");
     if ([_delegate respondsToSelector:@selector(selectModQingTutoringPublicReusableView:modQingTutoringPublicReusableViewCenterAction:)]){
         [_delegate selectModQingTutoringPublicReusableView:self modQingTutoringPublicReusableViewCenterAction:sender];
     }
