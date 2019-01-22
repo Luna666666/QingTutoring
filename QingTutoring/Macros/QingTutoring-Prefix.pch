@@ -36,7 +36,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "UIColor+HexColor.h"
-#import "MJExtension.h"
 #import "MainUserInfo.h"
 #import "CreateView.h"
 #import "MJRefresh.h"
