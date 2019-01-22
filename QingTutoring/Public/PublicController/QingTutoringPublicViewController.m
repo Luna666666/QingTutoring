@@ -90,4 +90,15 @@
         navigationController.interactivePopGestureRecognizer.delegate = nil;
     }
 }
+- (void)showBarButton:(WWNavigationBar)position button:(ButtonWithTitle *)button{
+    if (NAV_LEFT == position) {
+        self.navigationItem.leftBarButtonItem = nil;
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+        
+    }else if (NAV_RIGHT == position){
+        self.navigationItem.rightBarButtonItem = nil;
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    }
+}
 @end

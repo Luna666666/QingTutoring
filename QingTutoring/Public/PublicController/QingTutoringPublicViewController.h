@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum
+{
+    NAV_LEFT                    =0,
+    NAV_RIGHT                   =1,
+} WWNavigationBar;
 
 @interface QingTutoringPublicViewController : UIViewController<UIGestureRecognizerDelegate>
 - (void)show;
 - (void)hidden;
 - (void)showHudTitleString:(NSString *)hudString;
+- (void)showBarButton:(WWNavigationBar)position button:(ButtonWithTitle *)button;
 @end

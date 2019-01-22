@@ -445,8 +445,8 @@
 		56B9457421F6F32600AF4287 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56B9457521F6F32600AF4287 /* TutorialViewController.m */,
 				56B9457621F6F32600AF4287 /* TutorialViewController.h */,
+				56B9457521F6F32600AF4287 /* TutorialViewController.m */,
 				56B9457721F6F32600AF4287 /* TutorialViewController.xib */,
 			);
 			path = Controller;
