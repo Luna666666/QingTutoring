@@ -16,6 +16,7 @@
 #import "VendorMacro.h"
 #import "NotificationMacro.h"
 #import "UtilsMacro.h"
+#import "ButtonWithTitle.h"
 #import "LYHControl.h"
 #import "AppDelegate.h"
 #import "IQKeyboardManager.h"

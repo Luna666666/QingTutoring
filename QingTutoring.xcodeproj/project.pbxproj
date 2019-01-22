@@ -30,6 +30,11 @@
 		56315DAE21EDC98900018483 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DAC21EDC98900018483 /* MineViewController.xib */; };
 		56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DB021EDCA3A00018483 /* LoginViewController.m */; };
 		56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DB121EDCA3A00018483 /* LoginViewController.xib */; };
+		563650B521F6E78E003CDE33 /* ButtonWithTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650B421F6E78E003CDE33 /* ButtonWithTitle.m */; };
+		563650C021F6E92E003CDE33 /* LsyNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650B921F6E92E003CDE33 /* LsyNetworkManager.m */; };
+		563650C121F6E92E003CDE33 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */; };
+		563650C221F6E92E003CDE33 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BC21F6E92E003CDE33 /* HttpManager.m */; };
+		563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BE21F6E92E003CDE33 /* FSUploadImageView.m */; };
 		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
 		969CA0D49813D26537D8B5EB /* Pods_QingTutoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DA972E849F524C120C87C /* Pods_QingTutoring.framework */; };
 		A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */; };
@@ -39,10 +44,6 @@
 		CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F3214F997300F32522 /* QingTutoringNavigationController.m */; };
 		CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F5214F997300F32522 /* QingTutoringTabBarViewController.m */; };
 		CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC6F7214F997300F32522 /* QingTutoringPublicViewController.m */; };
-		CE2F03DA214FA8BD007FD607 /* FSUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC70A214F997300F32522 /* FSUploadImageView.m */; };
-		CE2F03DB214FA8BD007FD607 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC70C214F997300F32522 /* HttpManager.m */; };
-		CE2F03DC214FA8BD007FD607 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC70E214F997300F32522 /* LsyNetworkFormData.m */; };
-		CE2F03DD214FA8BD007FD607 /* LsyNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC710214F997300F32522 /* LsyNetworkManager.m */; };
 		CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC71E214F997300F32522 /* CreateView.m */; };
 		CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC722214F997300F32522 /* QingTutoringPublicCollectionCell.m */; };
 		CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DC724214F997300F32522 /* QingTutoringPublicFootReusableView.m */; };
@@ -145,6 +146,16 @@
 		56315DAF21EDCA3A00018483 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		56315DB021EDCA3A00018483 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		56315DB121EDCA3A00018483 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		563650B421F6E78E003CDE33 /* ButtonWithTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonWithTitle.m; sourceTree = "<group>"; };
+		563650B621F6E794003CDE33 /* ButtonWithTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonWithTitle.h; sourceTree = "<group>"; };
+		563650B821F6E92E003CDE33 /* FSUploadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSUploadImageView.h; sourceTree = "<group>"; };
+		563650B921F6E92E003CDE33 /* LsyNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LsyNetworkManager.m; sourceTree = "<group>"; };
+		563650BA21F6E92E003CDE33 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LsyNetworkFormData.m; sourceTree = "<group>"; };
+		563650BC21F6E92E003CDE33 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		563650BD21F6E92E003CDE33 /* LsyNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkManager.h; sourceTree = "<group>"; };
+		563650BE21F6E92E003CDE33 /* FSUploadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSUploadImageView.m; sourceTree = "<group>"; };
+		563650BF21F6E92E003CDE33 /* LsyNetworkFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkFormData.h; sourceTree = "<group>"; };
 		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
 		566E820621F0819400296979 /* IdentityInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityInformationViewController.m; sourceTree = "<group>"; };
 		9168E75FA52E3ACB894CF503 /* Pods-QingTutoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,14 +208,6 @@
 		CE3DC6F5214F997300F32522 /* QingTutoringTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QingTutoringTabBarViewController.m; sourceTree = "<group>"; };
 		CE3DC6F6214F997300F32522 /* QingTutoringPublicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QingTutoringPublicViewController.h; sourceTree = "<group>"; };
 		CE3DC6F7214F997300F32522 /* QingTutoringPublicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QingTutoringPublicViewController.m; sourceTree = "<group>"; };
-		CE3DC709214F997300F32522 /* FSUploadImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSUploadImageView.h; sourceTree = "<group>"; };
-		CE3DC70A214F997300F32522 /* FSUploadImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSUploadImageView.m; sourceTree = "<group>"; };
-		CE3DC70B214F997300F32522 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
-		CE3DC70C214F997300F32522 /* HttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
-		CE3DC70D214F997300F32522 /* LsyNetworkFormData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LsyNetworkFormData.h; sourceTree = "<group>"; };
-		CE3DC70E214F997300F32522 /* LsyNetworkFormData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LsyNetworkFormData.m; sourceTree = "<group>"; };
-		CE3DC70F214F997300F32522 /* LsyNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LsyNetworkManager.h; sourceTree = "<group>"; };
-		CE3DC710214F997300F32522 /* LsyNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LsyNetworkManager.m; sourceTree = "<group>"; };
 		CE3DC71D214F997300F32522 /* CreateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateView.h; sourceTree = "<group>"; };
 		CE3DC71E214F997300F32522 /* CreateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateView.m; sourceTree = "<group>"; };
 		CE3DC721214F997300F32522 /* QingTutoringPublicCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QingTutoringPublicCollectionCell.h; sourceTree = "<group>"; };
@@ -219,7 +222,6 @@
 		CE3DC72C214F997300F32522 /* ZSBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSBadgeView.m; sourceTree = "<group>"; };
 		CE3DC72D214F997300F32522 /* ZSProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSProgressHUD.h; sourceTree = "<group>"; };
 		CE3DC72E214F997300F32522 /* ZSProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSProgressHUD.m; sourceTree = "<group>"; };
-		CE3DC730214F997900F32522 /* provinces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = provinces.json; sourceTree = "<group>"; };
 		CE3DC7DB214F9C6A00F32522 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		CE3DC7DC214F9C6A00F32522 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
 		CE3DC7DD214F9C6A00F32522 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
@@ -689,6 +691,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		563650B721F6E92E003CDE33 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				563650BE21F6E92E003CDE33 /* FSUploadImageView.m */,
+				563650B821F6E92E003CDE33 /* FSUploadImageView.h */,
+				563650B921F6E92E003CDE33 /* LsyNetworkManager.m */,
+				563650BF21F6E92E003CDE33 /* LsyNetworkFormData.h */,
+				563650BA21F6E92E003CDE33 /* HttpManager.h */,
+				563650BC21F6E92E003CDE33 /* HttpManager.m */,
+				563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */,
+				563650BD21F6E92E003CDE33 /* LsyNetworkManager.h */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		6F4F35C1B0364434DF765755 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -773,6 +790,7 @@
 		CE3DC5F3214F948600F32522 /* QingTutoring */ = {
 			isa = PBXGroup;
 			children = (
+				563650B721F6E92E003CDE33 /* NetWork */,
 				A4A03D0F21F6E03D0031E012 /* Utility */,
 				CE3DC731214F999300F32522 /* ThirdPartys */,
 				CE3DC72F214F997900F32522 /* Resources */,
@@ -862,24 +880,8 @@
 			isa = PBXGroup;
 			children = (
 				56315BCB21EDAD9500018483 /* QingTutoringManager */,
-				CE3DC708214F997300F32522 /* NetworkManager */,
 			);
 			path = PublicHelper;
-			sourceTree = "<group>";
-		};
-		CE3DC708214F997300F32522 /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				CE3DC709214F997300F32522 /* FSUploadImageView.h */,
-				CE3DC70A214F997300F32522 /* FSUploadImageView.m */,
-				CE3DC70B214F997300F32522 /* HttpManager.h */,
-				CE3DC70C214F997300F32522 /* HttpManager.m */,
-				CE3DC70D214F997300F32522 /* LsyNetworkFormData.h */,
-				CE3DC70E214F997300F32522 /* LsyNetworkFormData.m */,
-				CE3DC70F214F997300F32522 /* LsyNetworkManager.h */,
-				CE3DC710214F997300F32522 /* LsyNetworkManager.m */,
-			);
-			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		CE3DC711214F997300F32522 /* PublicModel */ = {
@@ -892,6 +894,8 @@
 		CE3DC71C214F997300F32522 /* PublicView */ = {
 			isa = PBXGroup;
 			children = (
+				563650B621F6E794003CDE33 /* ButtonWithTitle.h */,
+				563650B421F6E78E003CDE33 /* ButtonWithTitle.m */,
 				CE3DC71D214F997300F32522 /* CreateView.h */,
 				CE3DC71E214F997300F32522 /* CreateView.m */,
 				56315BCD21EDAD9500018483 /* MBProgressHUD+TitleHandle.h */,
@@ -921,7 +925,6 @@
 		CE3DC72F214F997900F32522 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE3DC730214F997900F32522 /* provinces.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1248,11 +1251,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563650C121F6E92E003CDE33 /* LsyNetworkFormData.m in Sources */,
+				563650B521F6E78E003CDE33 /* ButtonWithTitle.m in Sources */,
 				CE53AC722150845900066079 /* CGGeometry+RSKImageCropper.m in Sources */,
+				563650C221F6E92E003CDE33 /* HttpManager.m in Sources */,
 				CE53AC732150845900066079 /* module.modulemap in Sources */,
+				563650C021F6E92E003CDE33 /* LsyNetworkManager.m in Sources */,
 				CE53AC742150845900066079 /* RSKImageCropViewController.m in Sources */,
 				CE53AC752150845900066079 /* RSKImageScrollView.m in Sources */,
 				CE53AC762150845900066079 /* RSKInternalUtility.m in Sources */,
+				563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */,
 				56315BDE21EDAD9500018483 /* MainUserInfo.m in Sources */,
 				CE53AC772150845900066079 /* RSKTouchView.m in Sources */,
 				56315DA821EDC94C00018483 /* FindViewController.m in Sources */,
@@ -1268,12 +1276,8 @@
 				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
 				56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */,
-				CE2F03DA214FA8BD007FD607 /* FSUploadImageView.m in Sources */,
-				CE2F03DB214FA8BD007FD607 /* HttpManager.m in Sources */,
 				56315D9E21EDC8D500018483 /* TutorialViewController.m in Sources */,
-				CE2F03DC214FA8BD007FD607 /* LsyNetworkFormData.m in Sources */,
 				56315BDA21EDAD9500018483 /* LYHControl.m in Sources */,
-				CE2F03DD214FA8BD007FD607 /* LsyNetworkManager.m in Sources */,
 				CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */,
 				CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */,
 				CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */,

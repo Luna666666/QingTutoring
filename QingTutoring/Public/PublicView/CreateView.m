@@ -15,7 +15,7 @@
                              text:(NSString *)text {
     UILabel *label = [[UILabel alloc]initWithFrame:frame];
     label.text = text;
-    if (font>40) {
+    if (font>40) {  
         label.font = [UIFont boldSystemFontOfSize:font];
     } else {
         label.font =[UIFont boldSystemFontOfSize:16];
