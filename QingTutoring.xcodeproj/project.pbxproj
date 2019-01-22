@@ -601,7 +601,6 @@
 				563650B721F6E92E003CDE33 /* NetWork */,
 				A4A03D0F21F6E03D0031E012 /* Utility */,
 				CE3DC731214F999300F32522 /* ThirdPartys */,
-				CE3DC72F214F997900F32522 /* Resources */,
 				CE3DC6F0214F997300F32522 /* Public */,
 				CE3DC6EA214F996B00F32522 /* Macros */,
 				CE3DC626214F995D00F32522 /* Classes */,
@@ -720,13 +719,6 @@
 				CE3DC72E214F997300F32522 /* ZSProgressHUD.m */,
 			);
 			path = PublicView;
-			sourceTree = "<group>";
-		};
-		CE3DC72F214F997900F32522 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		CE3DC731214F999300F32522 /* ThirdPartys */ = {
