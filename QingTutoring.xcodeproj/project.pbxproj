@@ -28,6 +28,8 @@
 		5632A92C21F83096003F9DDB /* TutorialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A92A21F83096003F9DDB /* TutorialCell.m */; };
 		5632A92D21F83096003F9DDB /* TutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5632A92B21F83096003F9DDB /* TutorialCell.xib */; };
 		5632A93021F8316C003F9DDB /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A92F21F8316C003F9DDB /* Tutorial.m */; };
+		5632A93321F8566F003F9DDB /* curriculumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A93221F8566F003F9DDB /* curriculumCell.m */; };
+		5632A93621F8573F003F9DDB /* curriculum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A93521F8573F003F9DDB /* curriculum.m */; };
 		563650B521F6E78E003CDE33 /* ButtonWithTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650B421F6E78E003CDE33 /* ButtonWithTitle.m */; };
 		563650C021F6E92E003CDE33 /* LsyNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650B921F6E92E003CDE33 /* LsyNetworkManager.m */; };
 		563650C121F6E92E003CDE33 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */; };
@@ -148,6 +150,10 @@
 		5632A92B21F83096003F9DDB /* TutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCell.xib; sourceTree = "<group>"; };
 		5632A92E21F8316C003F9DDB /* Tutorial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
 		5632A92F21F8316C003F9DDB /* Tutorial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		5632A93121F8566F003F9DDB /* curriculumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curriculumCell.h; sourceTree = "<group>"; };
+		5632A93221F8566F003F9DDB /* curriculumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curriculumCell.m; sourceTree = "<group>"; };
+		5632A93421F8573F003F9DDB /* curriculum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curriculum.h; sourceTree = "<group>"; };
+		5632A93521F8573F003F9DDB /* curriculum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curriculum.m; sourceTree = "<group>"; };
 		563650B421F6E78E003CDE33 /* ButtonWithTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonWithTitle.m; sourceTree = "<group>"; };
 		563650B621F6E794003CDE33 /* ButtonWithTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonWithTitle.h; sourceTree = "<group>"; };
 		563650B821F6E92E003CDE33 /* FSUploadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSUploadImageView.h; sourceTree = "<group>"; };
@@ -509,6 +515,8 @@
 		56B9458421F6F41500AF4287 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5632A93121F8566F003F9DDB /* curriculumCell.h */,
+				5632A93221F8566F003F9DDB /* curriculumCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -516,9 +524,9 @@
 		56B9458521F6F41A00AF4287 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */,
-				56B9458721F6F41A00AF4287 /* CurriculumViewController.m */,
 				56B9458821F6F41A00AF4287 /* CurriculumViewController.h */,
+				56B9458721F6F41A00AF4287 /* CurriculumViewController.m */,
+				56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -526,6 +534,8 @@
 		56B9458B21F6F41F00AF4287 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5632A93421F8573F003F9DDB /* curriculum.h */,
+				5632A93521F8573F003F9DDB /* curriculum.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1100,9 +1110,11 @@
 				CE2F03EA214FA8BE007FD607 /* ZSProgressHUD.m in Sources */,
 				56315BDF21EDAD9500018483 /* MBProgressHUD+TitleHandle.m in Sources */,
 				56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */,
+				5632A93621F8573F003F9DDB /* curriculum.m in Sources */,
 				56074C1121F19EE900C36CCD /* identifyModel.m in Sources */,
 				A4A03D1421F6E03E0031E012 /* UIDevice-Hardware.m in Sources */,
 				56315BDB21EDAD9500018483 /* UIColor+HexColor.m in Sources */,
+				5632A93321F8566F003F9DDB /* curriculumCell.m in Sources */,
 				5632A92C21F83096003F9DDB /* TutorialCell.m in Sources */,
 				56315BDC21EDAD9500018483 /* ControlCenter.m in Sources */,
 				56315BDD21EDAD9500018483 /* CustomAlertView.m in Sources */,
