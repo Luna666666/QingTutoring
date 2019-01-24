@@ -42,6 +42,7 @@
 		56B9458221F6F3F100AF4287 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9458021F6F3F000AF4287 /* FindViewController.m */; };
 		56B9458921F6F41B00AF4287 /* CurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */; };
 		56B9458A21F6F41B00AF4287 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9458721F6F41A00AF4287 /* CurriculumViewController.m */; };
+		56E8A6CF21F94C2B005BC892 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E8A6CE21F94C2B005BC892 /* MineTableViewCell.m */; };
 		969CA0D49813D26537D8B5EB /* Pods_QingTutoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DA972E849F524C120C87C /* Pods_QingTutoring.framework */; };
 		A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */; };
 		A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0D21F6DE2F0031E012 /* AppDelegate+OpenURL.m */; };
@@ -175,6 +176,8 @@
 		56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurriculumViewController.xib; sourceTree = "<group>"; };
 		56B9458721F6F41A00AF4287 /* CurriculumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurriculumViewController.m; sourceTree = "<group>"; };
 		56B9458821F6F41A00AF4287 /* CurriculumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumViewController.h; sourceTree = "<group>"; };
+		56E8A6CD21F94C2B005BC892 /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
+		56E8A6CE21F94C2B005BC892 /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		9168E75FA52E3ACB894CF503 /* Pods-QingTutoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.release.xcconfig"; sourceTree = "<group>"; };
 		A4A03D0621F6CDAA0031E012 /* AppDelegate+InitThirdSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+InitThirdSDK.h"; sourceTree = "<group>"; };
 		A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+InitThirdSDK.m"; sourceTree = "<group>"; };
@@ -440,6 +443,8 @@
 		56315D8A21EDC5A900018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56E8A6CD21F94C2B005BC892 /* MineTableViewCell.h */,
+				56E8A6CE21F94C2B005BC892 /* MineTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1092,6 +1097,7 @@
 				CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */,
 				CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */,
 				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
+				56E8A6CF21F94C2B005BC892 /* MineTableViewCell.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
 				56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */,
 				56315BDA21EDAD9500018483 /* LYHControl.m in Sources */,

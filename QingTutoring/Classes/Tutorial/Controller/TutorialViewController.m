@@ -10,7 +10,6 @@
 #import "IdentityInformationViewController.h"
 #import "TutorialCell.h"
 #import "Tutorial.h"
-
 #define kTutorialTableViewCellId @"tutorialCellId"
 
 @interface TutorialViewController ()<UITableViewDelegate,UITableViewDataSource>
