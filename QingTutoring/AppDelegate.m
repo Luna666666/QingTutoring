@@ -24,7 +24,7 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = [UIColor whiteColor];
-    GlobalCenter.sharedInstance.isLogin = true;
+    GlobalCenter.sharedInstance.isLogin = false;
     //初始化第三方sdk
     [self initThirdSDKsWithLaunchOptions:launchOptions];
     [self didFinishLaunchingWithOptionsOpenURL:launchOptions];

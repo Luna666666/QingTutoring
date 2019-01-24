@@ -50,14 +50,14 @@
         [self addSubview:_tutorialName];
         
         _teachersSize = [UILabel new];
-        _teachersSize.frame=CGRectMake(CGRectGetMaxX(_tutorialName.frame),CGRectGetMaxY(_subject.frame)+5,117,20);
+    _teachersSize.frame=CGRectMake(CGRectGetMaxX(_tutorialName.frame),CGRectGetMaxY(_subject.frame)+5,117,20);
         _teachersSize.text=@"师资规模:  60人";
         _teachersSize.textColor= [UIColor colorWithHex:@"#101010"];
         _teachersSize.font =[UIFont systemFontOfSize:14];
         _teachersSize.numberOfLines = 1;
         [self addSubview:_teachersSize];
         
-        _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame),CGRectGetMaxY(_subject.frame)+5,110,30) andImageFrame:CGRectMake(0,5,19,20) andTitleFrame:CGRectMake(20,5,90,20)];
+        _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame),CGRectGetMaxY(_subject.frame)+5,110,20) andImageFrame:CGRectMake(0,0,19,20) andTitleFrame:CGRectMake(25,0,90,20)];
         [_phone setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:@"17625902072" andImageName:@"home_phone"];
         [self addSubview:_phone];
         
