@@ -57,7 +57,7 @@
 
 - (UINavigationController *)setNavWithVC:(UIViewController *)VC imgName:(NSString *)imgName selectImgName:(NSString *)selectImgName
 {
-    QingTutoringNavigationController * nav = [[QingTutoringNavigationController alloc]initWithRootViewController:VC];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:VC];
     UITabBarItem *item2 = [[UITabBarItem alloc]initWithTitle:VC.tabBarItem.title image:[self removeRendering:imgName] selectedImage:[self removeRendering:selectImgName]];
     if ([VC.tabBarItem.title isEqualToString:@"消息"]) {
       item2.badgeValue=[NSString stringWithFormat:@"%d",12];

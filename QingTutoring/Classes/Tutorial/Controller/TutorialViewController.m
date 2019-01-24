@@ -142,7 +142,7 @@
      [self showBarButton:NAV_LEFT button:self.gradeButton];
      [self showBarButton:NAV_RIGHT button:self.searchButton];
     
-   
+    
 }
 -(void)requestTutorialData{
     NSDictionary * tutorial_Dic = @{

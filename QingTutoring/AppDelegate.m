@@ -28,7 +28,7 @@
     //初始化第三方sdk
     [self initThirdSDKsWithLaunchOptions:launchOptions];
     [self didFinishLaunchingWithOptionsOpenURL:launchOptions];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[QingTutoringTabBarViewController new]];
+    self.window.rootViewController = [QingTutoringTabBarViewController new];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -14,7 +14,6 @@ target 'QingTutoring' do
  pod 'DZNEmptyDataSet'
  pod 'IQKeyboardManager','4.0.7'
  pod 'SDCycleScrollView','1.65'
- pod 'JZNavigationExtension','1.5.0'
  pod 'WechatOpenSDK', '~> 1.7'
  pod 'AFNetworking'
  pod 'YYKit', '~> 1.0.9'
