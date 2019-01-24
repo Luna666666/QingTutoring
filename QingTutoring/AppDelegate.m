@@ -24,12 +24,11 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = [UIColor whiteColor];
-    
+    GlobalCenter.sharedInstance.isLogin = true;
     //初始化第三方sdk
     [self initThirdSDKsWithLaunchOptions:launchOptions];
     [self didFinishLaunchingWithOptionsOpenURL:launchOptions];
-    
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[IdentityInformationViewController new]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[QingTutoringTabBarViewController new]];
     [self.window makeKeyAndVisible];
     return YES;
 }

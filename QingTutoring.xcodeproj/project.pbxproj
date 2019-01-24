@@ -35,6 +35,7 @@
 		563650C121F6E92E003CDE33 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */; };
 		563650C221F6E92E003CDE33 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BC21F6E92E003CDE33 /* HttpManager.m */; };
 		563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BE21F6E92E003CDE33 /* FSUploadImageView.m */; };
+		5655DD6B21F98FF200852D62 /* GlobalCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5655DD6A21F98FF200852D62 /* GlobalCenter.m */; };
 		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
 		56B9457821F6F32600AF4287 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9457521F6F32600AF4287 /* TutorialViewController.m */; };
 		56B9457921F6F32600AF4287 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9457721F6F32600AF4287 /* TutorialViewController.xib */; };
@@ -165,6 +166,8 @@
 		563650BD21F6E92E003CDE33 /* LsyNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkManager.h; sourceTree = "<group>"; };
 		563650BE21F6E92E003CDE33 /* FSUploadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSUploadImageView.m; sourceTree = "<group>"; };
 		563650BF21F6E92E003CDE33 /* LsyNetworkFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkFormData.h; sourceTree = "<group>"; };
+		5655DD6921F98FEE00852D62 /* GlobalCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalCenter.h; sourceTree = "<group>"; };
+		5655DD6A21F98FF200852D62 /* GlobalCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalCenter.m; sourceTree = "<group>"; };
 		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
 		566E820621F0819400296979 /* IdentityInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityInformationViewController.m; sourceTree = "<group>"; };
 		56B9457521F6F32600AF4287 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
@@ -562,6 +565,8 @@
 		A4A03D0F21F6E03D0031E012 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5655DD6A21F98FF200852D62 /* GlobalCenter.m */,
+				5655DD6921F98FEE00852D62 /* GlobalCenter.h */,
 				5632A92221F7F504003F9DDB /* ViewManager.m */,
 				5632A92121F7F4FB003F9DDB /* ViewManager.h */,
 				A4A03D1221F6E03D0031E012 /* UIDevice-Hardware.h */,
@@ -1126,6 +1131,7 @@
 				56315BDD21EDAD9500018483 /* CustomAlertView.m in Sources */,
 				56315BE021EDAD9500018483 /* LYHUIControl.m in Sources */,
 				CEAD5D0421524D35003A64B3 /* ShareView.m in Sources */,
+				5655DD6B21F98FF200852D62 /* GlobalCenter.m in Sources */,
 				56315DAD21EDC98900018483 /* MineViewController.m in Sources */,
 				CE3DC604214F948600F32522 /* main.m in Sources */,
 				A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */,

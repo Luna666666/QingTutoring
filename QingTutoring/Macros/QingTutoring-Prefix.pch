@@ -42,6 +42,7 @@
 #import "MJRefresh.h"
 
 #import "UIUtility.h"
+#import "GlobalCenter.h"
 
 #endif /* QingTutoring_Prefix_pch */
 

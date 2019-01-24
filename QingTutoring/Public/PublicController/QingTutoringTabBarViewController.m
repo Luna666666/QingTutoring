@@ -30,8 +30,12 @@
     findVC.tabBarItem.title = @"发现";
     
     MineViewController * myVC = [[MineViewController alloc]init];
-    myVC.tabBarItem.title = @"我的";
-    
+    myVC.tabBarItem.title = @"未登录";
+    if (GlobalCenter.sharedInstance.isLogin == true) {
+        myVC.tabBarItem.title = @"我的";
+    }else{
+        myVC.tabBarItem.title = @"未登录";
+    }
     self.viewControllers = @[
                              [self setNavWithVC:tutorialVC imgName:@"tutoring_tab" selectImgName:@"tutoring_tab-select"],
                              [self setNavWithVC:curriculumVC imgName:@"course_tab" selectImgName:@"course_tab_select"],
