@@ -123,5 +123,6 @@
 #define kUserId [USER_DEFAULTS objectForKey:kUserIdKey]
 #define kTokenKey @"token"
 #define kToken [USER_DEFAULTS objectForKey:kTokenKey]
+#define CIPHERIDCARDSTRING @"ADkpBv5CZg"//身份证号加密字符串
 
 #endif /* UtilsMacro_h */

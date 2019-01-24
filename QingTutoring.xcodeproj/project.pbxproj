@@ -24,11 +24,18 @@
 		56315DAE21EDC98900018483 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DAC21EDC98900018483 /* MineViewController.xib */; };
 		56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315DB021EDCA3A00018483 /* LoginViewController.m */; };
 		56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56315DB121EDCA3A00018483 /* LoginViewController.xib */; };
+		5632A92321F7F504003F9DDB /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A92221F7F504003F9DDB /* ViewManager.m */; };
+		5632A92C21F83096003F9DDB /* TutorialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A92A21F83096003F9DDB /* TutorialCell.m */; };
+		5632A92D21F83096003F9DDB /* TutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5632A92B21F83096003F9DDB /* TutorialCell.xib */; };
+		5632A93021F8316C003F9DDB /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A92F21F8316C003F9DDB /* Tutorial.m */; };
+		5632A93321F8566F003F9DDB /* curriculumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A93221F8566F003F9DDB /* curriculumCell.m */; };
+		5632A93621F8573F003F9DDB /* curriculum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632A93521F8573F003F9DDB /* curriculum.m */; };
 		563650B521F6E78E003CDE33 /* ButtonWithTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650B421F6E78E003CDE33 /* ButtonWithTitle.m */; };
 		563650C021F6E92E003CDE33 /* LsyNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650B921F6E92E003CDE33 /* LsyNetworkManager.m */; };
 		563650C121F6E92E003CDE33 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */; };
 		563650C221F6E92E003CDE33 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BC21F6E92E003CDE33 /* HttpManager.m */; };
 		563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BE21F6E92E003CDE33 /* FSUploadImageView.m */; };
+		5655DD6B21F98FF200852D62 /* GlobalCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5655DD6A21F98FF200852D62 /* GlobalCenter.m */; };
 		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
 		56B9457821F6F32600AF4287 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9457521F6F32600AF4287 /* TutorialViewController.m */; };
 		56B9457921F6F32600AF4287 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9457721F6F32600AF4287 /* TutorialViewController.xib */; };
@@ -36,6 +43,7 @@
 		56B9458221F6F3F100AF4287 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9458021F6F3F000AF4287 /* FindViewController.m */; };
 		56B9458921F6F41B00AF4287 /* CurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */; };
 		56B9458A21F6F41B00AF4287 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9458721F6F41A00AF4287 /* CurriculumViewController.m */; };
+		56E8A6CF21F94C2B005BC892 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E8A6CE21F94C2B005BC892 /* MineTableViewCell.m */; };
 		969CA0D49813D26537D8B5EB /* Pods_QingTutoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DA972E849F524C120C87C /* Pods_QingTutoring.framework */; };
 		A4A03D0821F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */; };
 		A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A03D0D21F6DE2F0031E012 /* AppDelegate+OpenURL.m */; };
@@ -137,6 +145,17 @@
 		56315DAF21EDCA3A00018483 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		56315DB021EDCA3A00018483 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		56315DB121EDCA3A00018483 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5632A92121F7F4FB003F9DDB /* ViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
+		5632A92221F7F504003F9DDB /* ViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
+		5632A92921F83096003F9DDB /* TutorialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialCell.h; sourceTree = "<group>"; };
+		5632A92A21F83096003F9DDB /* TutorialCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialCell.m; sourceTree = "<group>"; };
+		5632A92B21F83096003F9DDB /* TutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCell.xib; sourceTree = "<group>"; };
+		5632A92E21F8316C003F9DDB /* Tutorial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		5632A92F21F8316C003F9DDB /* Tutorial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		5632A93121F8566F003F9DDB /* curriculumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curriculumCell.h; sourceTree = "<group>"; };
+		5632A93221F8566F003F9DDB /* curriculumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curriculumCell.m; sourceTree = "<group>"; };
+		5632A93421F8573F003F9DDB /* curriculum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curriculum.h; sourceTree = "<group>"; };
+		5632A93521F8573F003F9DDB /* curriculum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curriculum.m; sourceTree = "<group>"; };
 		563650B421F6E78E003CDE33 /* ButtonWithTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonWithTitle.m; sourceTree = "<group>"; };
 		563650B621F6E794003CDE33 /* ButtonWithTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonWithTitle.h; sourceTree = "<group>"; };
 		563650B821F6E92E003CDE33 /* FSUploadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSUploadImageView.h; sourceTree = "<group>"; };
@@ -147,6 +166,8 @@
 		563650BD21F6E92E003CDE33 /* LsyNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkManager.h; sourceTree = "<group>"; };
 		563650BE21F6E92E003CDE33 /* FSUploadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSUploadImageView.m; sourceTree = "<group>"; };
 		563650BF21F6E92E003CDE33 /* LsyNetworkFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkFormData.h; sourceTree = "<group>"; };
+		5655DD6921F98FEE00852D62 /* GlobalCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalCenter.h; sourceTree = "<group>"; };
+		5655DD6A21F98FF200852D62 /* GlobalCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalCenter.m; sourceTree = "<group>"; };
 		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
 		566E820621F0819400296979 /* IdentityInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityInformationViewController.m; sourceTree = "<group>"; };
 		56B9457521F6F32600AF4287 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
@@ -158,6 +179,8 @@
 		56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurriculumViewController.xib; sourceTree = "<group>"; };
 		56B9458721F6F41A00AF4287 /* CurriculumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurriculumViewController.m; sourceTree = "<group>"; };
 		56B9458821F6F41A00AF4287 /* CurriculumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumViewController.h; sourceTree = "<group>"; };
+		56E8A6CD21F94C2B005BC892 /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
+		56E8A6CE21F94C2B005BC892 /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		9168E75FA52E3ACB894CF503 /* Pods-QingTutoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingTutoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-QingTutoring/Pods-QingTutoring.release.xcconfig"; sourceTree = "<group>"; };
 		A4A03D0621F6CDAA0031E012 /* AppDelegate+InitThirdSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+InitThirdSDK.h"; sourceTree = "<group>"; };
 		A4A03D0721F6CDAA0031E012 /* AppDelegate+InitThirdSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+InitThirdSDK.m"; sourceTree = "<group>"; };
@@ -423,6 +446,8 @@
 		56315D8A21EDC5A900018483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56E8A6CD21F94C2B005BC892 /* MineTableViewCell.h */,
+				56E8A6CE21F94C2B005BC892 /* MineTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,8 +470,8 @@
 		56B9457421F6F32600AF4287 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56B9457521F6F32600AF4287 /* TutorialViewController.m */,
 				56B9457621F6F32600AF4287 /* TutorialViewController.h */,
+				56B9457521F6F32600AF4287 /* TutorialViewController.m */,
 				56B9457721F6F32600AF4287 /* TutorialViewController.xib */,
 			);
 			path = Controller;
@@ -455,6 +480,8 @@
 		56B9457A21F6F32A00AF4287 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5632A92E21F8316C003F9DDB /* Tutorial.h */,
+				5632A92F21F8316C003F9DDB /* Tutorial.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,6 +489,9 @@
 		56B9457B21F6F32E00AF4287 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5632A92921F83096003F9DDB /* TutorialCell.h */,
+				5632A92A21F83096003F9DDB /* TutorialCell.m */,
+				5632A92B21F83096003F9DDB /* TutorialCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -493,6 +523,8 @@
 		56B9458421F6F41500AF4287 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5632A93121F8566F003F9DDB /* curriculumCell.h */,
+				5632A93221F8566F003F9DDB /* curriculumCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -500,9 +532,9 @@
 		56B9458521F6F41A00AF4287 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */,
-				56B9458721F6F41A00AF4287 /* CurriculumViewController.m */,
 				56B9458821F6F41A00AF4287 /* CurriculumViewController.h */,
+				56B9458721F6F41A00AF4287 /* CurriculumViewController.m */,
+				56B9458621F6F41A00AF4287 /* CurriculumViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,6 +542,8 @@
 		56B9458B21F6F41F00AF4287 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5632A93421F8573F003F9DDB /* curriculum.h */,
+				5632A93521F8573F003F9DDB /* curriculum.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -531,6 +565,10 @@
 		A4A03D0F21F6E03D0031E012 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5655DD6A21F98FF200852D62 /* GlobalCenter.m */,
+				5655DD6921F98FEE00852D62 /* GlobalCenter.h */,
+				5632A92221F7F504003F9DDB /* ViewManager.m */,
+				5632A92121F7F4FB003F9DDB /* ViewManager.h */,
 				A4A03D1221F6E03D0031E012 /* UIDevice-Hardware.h */,
 				A4A03D1021F6E03D0031E012 /* UIDevice-Hardware.m */,
 				A4A03D1121F6E03D0031E012 /* UIUtility.h */,
@@ -948,6 +986,7 @@
 			files = (
 				CEAD5CF821524B22003A64B3 /* ShareSDKUI.bundle in Resources */,
 				CEAD5CF921524B22003A64B3 /* ShareSDK.bundle in Resources */,
+				5632A92D21F83096003F9DDB /* TutorialCell.xib in Resources */,
 				56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */,
 				56B9458921F6F41B00AF4287 /* CurriculumViewController.xib in Resources */,
 				56315DAE21EDC98900018483 /* MineViewController.xib in Resources */,
@@ -1058,15 +1097,18 @@
 				CE53AC792150845900066079 /* UIImage+RSKImageCropper.m in Sources */,
 				56315CE521EDB25400018483 /* UIImage+MadeInChina.m in Sources */,
 				CE53AC7A2150845900066079 /* WWAvatarPicker.m in Sources */,
+				5632A93021F8316C003F9DDB /* Tutorial.m in Sources */,
 				56074C0E21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m in Sources */,
 				CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */,
 				CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */,
 				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
+				56E8A6CF21F94C2B005BC892 /* MineTableViewCell.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
 				56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */,
 				56315BDA21EDAD9500018483 /* LYHControl.m in Sources */,
 				CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */,
 				CE2F03E5214FA8BE007FD607 /* QingTutoringPublicCollectionCell.m in Sources */,
+				5632A92321F7F504003F9DDB /* ViewManager.m in Sources */,
 				56B9457821F6F32600AF4287 /* TutorialViewController.m in Sources */,
 				CE2F03E6214FA8BE007FD607 /* QingTutoringPublicFootReusableView.m in Sources */,
 				566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */,
@@ -1079,13 +1121,17 @@
 				CE2F03EA214FA8BE007FD607 /* ZSProgressHUD.m in Sources */,
 				56315BDF21EDAD9500018483 /* MBProgressHUD+TitleHandle.m in Sources */,
 				56315DB221EDCA3A00018483 /* LoginViewController.m in Sources */,
+				5632A93621F8573F003F9DDB /* curriculum.m in Sources */,
 				56074C1121F19EE900C36CCD /* identifyModel.m in Sources */,
 				A4A03D1421F6E03E0031E012 /* UIDevice-Hardware.m in Sources */,
 				56315BDB21EDAD9500018483 /* UIColor+HexColor.m in Sources */,
+				5632A93321F8566F003F9DDB /* curriculumCell.m in Sources */,
+				5632A92C21F83096003F9DDB /* TutorialCell.m in Sources */,
 				56315BDC21EDAD9500018483 /* ControlCenter.m in Sources */,
 				56315BDD21EDAD9500018483 /* CustomAlertView.m in Sources */,
 				56315BE021EDAD9500018483 /* LYHUIControl.m in Sources */,
 				CEAD5D0421524D35003A64B3 /* ShareView.m in Sources */,
+				5655DD6B21F98FF200852D62 /* GlobalCenter.m in Sources */,
 				56315DAD21EDC98900018483 /* MineViewController.m in Sources */,
 				CE3DC604214F948600F32522 /* main.m in Sources */,
 				A4A03D0E21F6DE2F0031E012 /* AppDelegate+OpenURL.m in Sources */,

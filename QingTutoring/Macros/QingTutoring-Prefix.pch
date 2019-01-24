@@ -30,6 +30,7 @@
 #import "SVProgressHUD.h"
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
+#import "ViewManager.h"
 #import "SVProgressHUD.h"
 #import <AVFoundation/AVFoundation.h>
 
@@ -41,6 +42,7 @@
 #import "MJRefresh.h"
 
 #import "UIUtility.h"
+#import "GlobalCenter.h"
 
 #endif /* QingTutoring_Prefix_pch */
 
