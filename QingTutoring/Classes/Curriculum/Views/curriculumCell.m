@@ -52,11 +52,11 @@
         _curriculumName.numberOfLines = 1;
         [self addSubview:_curriculumName];
         
-        _subject =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_teacherPic.frame.origin.x,CGRectGetMaxY(_teacherPic.frame)+5,46,21) andImageFrame:CGRectZero andTitleFrame:CGRectMake(0,0,46,21)];
+        _subject =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_teacherPic.frame.origin.x,CGRectGetMaxY(_teacherPic.frame)+5,46,15) andImageFrame:CGRectZero andTitleFrame:CGRectMake(0,0,46,15)];
         _subject.clipsToBounds = YES;
-        _subject.layer.cornerRadius = 9;
+        _subject.layer.cornerRadius = 6;
         _subject.backgroundColor = [UIColor colorWithHex:@"#585858"];
-        [_subject setUIWithFont:[UIFont systemFontOfSize:13] andColor:[UIColor whiteColor] andTitle:@"数学" andImageName:nil];
+        [_subject setUIWithFont:[UIFont systemFontOfSize:11] andColor:[UIColor whiteColor] andTitle:@"数学" andImageName:nil];
         [self addSubview:_subject];
         
         _grade = [UILabel new];
