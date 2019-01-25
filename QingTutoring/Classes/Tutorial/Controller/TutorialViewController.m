@@ -64,8 +64,8 @@
     float titleWidth = width-10;
     float space = (SCREEN_WIDTH-240-20)/3.0;
     for (int i=0; i<titleArray.count; i++) {
-        ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,30/2.0+5,5,5) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
-        [typeBtn setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:titleArray[i] andImageName:@"home_down-select"];
+        ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,15,10,10) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
+        [typeBtn setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:titleArray[i] andImageName:@"home_down"];
         [typeBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         typeBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         typeBtn.tag = 100+i;
@@ -120,7 +120,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return 200;
+    return 185;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.tutorial_Array.count;

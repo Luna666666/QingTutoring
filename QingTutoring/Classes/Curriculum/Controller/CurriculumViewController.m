@@ -58,11 +58,11 @@
     NSArray * titleArray=@[@"课程",@"年龄",@"距离"];
     float originalX = 10;
     float width = 100;
-    float titleWidth = width-10;
+    float titleWidth = width-30;
     float space = (SCREEN_WIDTH-300-20)/2.0;
     for (int i=0; i<titleArray.count; i++) {
-        ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,30/2.0+5,5,5) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
-        [typeBtn setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:titleArray[i] andImageName:@"home_down-select"];
+        ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,15,10,10) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
+        [typeBtn setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:titleArray[i] andImageName:@"home_down"];
         [typeBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         typeBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         typeBtn.tag = 100+i;
@@ -112,7 +112,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return 91;
+    return 145;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.curriculum_Array.count;

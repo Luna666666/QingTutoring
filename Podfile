@@ -8,7 +8,6 @@ target 'QingTutoring' do
  pod 'SDWebImage', '3.7.6'
  pod 'MBProgressHUD', '0.9.2'
  pod 'MJRefresh', '3.1.12'
- pod 'Masonry'
  pod 'JPush'
  pod 'SVProgressHUD'
  pod 'DZNEmptyDataSet'

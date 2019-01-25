@@ -10,16 +10,15 @@
 
 @implementation curriculumCell
 {
-    UIImageView *_teacherPic;
-    UILabel *_teacherName;
-    UILabel *_curriculumName;//课程名称
+    UIImageView *_tutorialPic;//图片
+    UIImageView *_headPic;//头像
+    UILabel *_tutorialTeacher;//辅导老师
+    ButtonWithTitle *_grade;//科目
     UILabel *_teachersSize;//师资规模
-    ButtonWithTitle*_subject;//科目名称
-    UILabel *_grade;//年级
-    UILabel *_curriculumTime;//课程截止时间
-    UILabel *_curriculumDescription;//课程描述
+    UILabel *_subjectName;//提升班
+    UILabel *_description;//描述
     UIView *_underLine;
-    
+  
 }
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -28,65 +27,57 @@
         self.backgroundColor = [UIColor whiteColor];
         self.selectionStyle=UITableViewCellSelectionStyleNone;
         
-        _teacherPic = [UIImageView new];
-        _teacherPic.frame=CGRectMake(20,12,40,40);
-        _teacherPic.clipsToBounds = YES;
-        _teacherPic.layer.cornerRadius = 20;
-        _teacherPic.contentMode=UIViewContentModeScaleAspectFill;
-        _teacherPic.clipsToBounds = YES;
-        _teacherPic.image=[UIImage imageNamed:@"home_master"];
-        [self addSubview:_teacherPic];
+        _tutorialPic = [UIImageView new];
+        _tutorialPic.frame=CGRectMake(0,0,SCREEN_WIDTH,80);
+        _tutorialPic.contentMode=UIViewContentModeScaleAspectFill;
+        _tutorialPic.clipsToBounds = YES;
+        _tutorialPic.image=[UIImage imageNamed:@"home_Tutorial"];
+        [self addSubview:_tutorialPic];
         
-        _teacherName = [UILabel new];
-        _teacherName.frame=CGRectMake(CGRectGetMaxX(_teacherPic.frame)+5,12,60,35);
-        _teacherName.text=@"王婷婷";
-        _teacherName.font =[UIFont systemFontOfSize:14];
-        _teacherName.textColor = [UIColor colorWithHex:@"#585858"];
-        [self addSubview:_teacherName];
+        _headPic = [UIImageView new];
+        _headPic.frame=CGRectMake(0,CGRectGetMaxY(_tutorialPic.frame)+7,45,45);
+        _headPic.contentMode=UIViewContentModeScaleAspectFill;
+        _headPic.layer.cornerRadius = _headPic.frame.size.height/2;
+        _headPic.clipsToBounds = YES;
+        _headPic.image=[UIImage imageNamed:@"home_master"];
+        [self addSubview:_headPic];
         
-        _curriculumName = [UILabel new];
-        _curriculumName.frame=CGRectMake(CGRectGetMaxX(_teacherName.frame)+26,_teacherName.frame.origin.y,180,35);
-        _curriculumName.text=@"三年级数学下学期提升班";
-        _curriculumName.textColor= [UIColor colorWithHex:@"#101010"];
-        _curriculumName.font =[UIFont systemFontOfSize:14];
-        _curriculumName.numberOfLines = 1;
-        [self addSubview:_curriculumName];
+        _tutorialTeacher = [UILabel new];
+        _tutorialTeacher.frame=CGRectMake(CGRectGetMaxX(_headPic.frame)+5,_headPic.origin.y,47,26);
+        _tutorialTeacher.backgroundColor = [UIColor whiteColor];
+        _tutorialTeacher.text=@"王婷婷";
+        _tutorialTeacher.textColor= [UIColor colorWithHex:@"#101010"];
+        _tutorialTeacher.font =[UIFont fontWithName:@"PingFang SC" size:12];
+        _tutorialTeacher.numberOfLines = 1;
+        [self addSubview:_tutorialTeacher];
         
-        _subject =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_teacherPic.frame.origin.x,CGRectGetMaxY(_teacherPic.frame)+5,46,15) andImageFrame:CGRectZero andTitleFrame:CGRectMake(0,0,46,15)];
-        _subject.clipsToBounds = YES;
-        _subject.layer.cornerRadius = 6;
-        _subject.backgroundColor = [UIColor colorWithHex:@"#585858"];
-        [_subject setUIWithFont:[UIFont systemFontOfSize:11] andColor:[UIColor whiteColor] andTitle:@"数学" andImageName:nil];
-        [self addSubview:_subject];
-        
-        _grade = [UILabel new];
-        _grade.frame=CGRectMake(CGRectGetMaxX(_subject.frame),_subject.frame.origin.y,50,25);
-        _grade.text=@"三年级";
-        _grade.textColor= [UIColor colorWithHex:@"#A7A7A7"];
-        _grade.font =[UIFont systemFontOfSize:13];
-        _grade.numberOfLines = 1;
+        _grade =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_tutorialTeacher.frame),_headPic.origin.y+2,42,17) andImageFrame:CGRectZero andTitleFrame:CGRectMake(0,0,42,17)];
+        _grade.backgroundColor= [UIColor colorWithHex:@"#585858"];
+        _grade.clipsToBounds = YES;
+        _grade.layer.cornerRadius = 4;
+        [_grade setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor whiteColor] andTitle:@"数学" andImageName:@"home_phone"];
         [self addSubview:_grade];
         
-        _curriculumTime = [UILabel new];
-        _curriculumTime.frame=CGRectMake(CGRectGetMaxX(_grade.frame),_subject.frame.origin.y,100,25);
-        _curriculumTime.text=@"7月1号-7月31日";
-        _curriculumTime.textColor= [UIColor colorWithHex:@"#A7A7A7"];
-        _curriculumTime.font =[UIFont systemFontOfSize:13];
-        _curriculumTime.numberOfLines = 1;
-        [self addSubview:_curriculumTime];
-        
-        _curriculumDescription = [UILabel new];
-    _curriculumDescription.frame=CGRectMake(CGRectGetMaxX(_curriculumTime.frame),_subject.frame.origin.y,150,25);
-        _curriculumDescription.text=@"· 每天 ·8:00-18:00";
-        _curriculumDescription.textColor= [UIColor colorWithHex:@"#A7A7A7"];
-        _curriculumDescription.font =[UIFont systemFontOfSize:13];
-        _curriculumDescription.numberOfLines = 1;
-        [self addSubview:_curriculumDescription];
+        _subjectName = [UILabel new];
+         _subjectName.frame=CGRectMake(CGRectGetMaxX(_grade.frame) +5,_headPic.origin.y,200,26);
+        _subjectName.text=@"三年级下学期数学提升班";
+        _subjectName.textColor= [UIColor colorWithHex:@"#101010"];
+        _subjectName.font = [UIFont fontWithName:@"PingFang SC" size:12];
+        _subjectName.numberOfLines = 1;
+        [self addSubview:_subjectName];
+       _description= [UILabel new];
+    _description.frame=CGRectMake(_tutorialTeacher.origin.x,CGRectGetMaxY(_subjectName.frame)+3,236,26);
+        _description.text=@"三年级7月1号-7月31号 · 每天 ·8:00-18:00";
+        _description.textColor= [UIColor colorWithHex:@"#101010"];
+        _description.font = [UIFont fontWithName:@"PingFang SC" size:12];
+        _description.numberOfLines = 1;
+        [self addSubview:_description];
         
         _underLine=[UIView new];
-        _underLine.frame=CGRectMake(0,CGRectGetMaxY(_curriculumDescription.frame)+5,SCREEN_WIDTH,3);
+        _underLine.frame=CGRectMake(0,CGRectGetMaxY(_description.frame)+5,SCREEN_WIDTH,1);
         _underLine.backgroundColor= [UIColor colorWithHex:@"#E4E5F0"];
         [self addSubview:_underLine];
+        
     }
     return self;
 }

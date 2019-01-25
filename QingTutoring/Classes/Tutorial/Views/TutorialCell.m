@@ -11,13 +11,14 @@
 @implementation TutorialCell
 {
     UIImageView *_tutorialPic;//图片
-    UILabel *_subject;//课程名称
     UILabel *_tutorialName;//辅导机构名称
     UILabel *_teachersSize;//师资规模
     ButtonWithTitle*_phone;//联系电话
     ButtonWithTitle *_locatation;//地点
     ButtonWithTitle *_tutorialNum;//辅导人数
     UIView *_underLine;
+    UIImageView *_headPic;//头像
+    UILabel *_tutorialTeacher;//辅导老师
     
 }
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -28,46 +29,39 @@
         self.selectionStyle=UITableViewCellSelectionStyleNone;
         
         _tutorialPic = [UIImageView new];
-        _tutorialPic.frame=CGRectMake(0,0,SCREEN_WIDTH,110);
+        _tutorialPic.frame=CGRectMake(0,0,SCREEN_WIDTH,80);
         _tutorialPic.contentMode=UIViewContentModeScaleAspectFill;
         _tutorialPic.clipsToBounds = YES;
         _tutorialPic.image=[UIImage imageNamed:@"home_Tutorial"];
         [self addSubview:_tutorialPic];
         
-        _subject = [UILabel new];
-        _subject.frame=CGRectMake(10,CGRectGetMaxY(_tutorialPic.frame),110,25);
-        _subject.text=@"七年级数学";
-        _subject.font =[UIFont systemFontOfSize:14];
-        _subject.textColor = [UIColor colorWithHex:@"#101010"];
-        [self addSubview:_subject];
-        
         _tutorialName = [UILabel new];
-        _tutorialName.frame=CGRectMake(_subject.frame.origin.x,CGRectGetMaxY(_subject.frame)+5,110,20);
+    _tutorialName.frame=CGRectMake(_tutorialPic.frame.origin.x+10,CGRectGetMaxY(_tutorialPic.frame)+5,90,25);
         _tutorialName.text=@"思成辅导班";
         _tutorialName.textColor= [UIColor colorWithHex:@"#101010"];
-        _tutorialName.font =[UIFont systemFontOfSize:14];
+        _tutorialName.font =[UIFont fontWithName:@"PingFang SC" size:12];
         _tutorialName.numberOfLines = 1;
         [self addSubview:_tutorialName];
         
         _teachersSize = [UILabel new];
-    _teachersSize.frame=CGRectMake(CGRectGetMaxX(_tutorialName.frame),CGRectGetMaxY(_subject.frame)+5,117,20);
+    _teachersSize.frame=CGRectMake(CGRectGetMaxX(_tutorialName.frame),CGRectGetMaxY(_tutorialPic.frame)+5,87,25);
         _teachersSize.text=@"师资规模:  60人";
         _teachersSize.textColor= [UIColor colorWithHex:@"#101010"];
-        _teachersSize.font =[UIFont systemFontOfSize:14];
+        _teachersSize.font = [UIFont fontWithName:@"PingFang SC" size:12];
         _teachersSize.numberOfLines = 1;
         [self addSubview:_teachersSize];
         
-        _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame),CGRectGetMaxY(_subject.frame)+5,110,20) andImageFrame:CGRectMake(0,0,19,20) andTitleFrame:CGRectMake(25,0,90,20)];
-        [_phone setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:@"17625902072" andImageName:@"home_phone"];
+        _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame),CGRectGetMaxY(_tutorialPic.frame)+5,110,30) andImageFrame:CGRectMake(5,5,12,15) andTitleFrame:CGRectMake(17,3,90,20)];
+        [_phone setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"17625902072" andImageName:@"home_phone"];
         [self addSubview:_phone];
         
-        _locatation =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_subject.frame.origin.x,CGRectGetMaxY(_tutorialName.frame)+8,130,30) andImageFrame:CGRectMake(0,5,19,20) andTitleFrame:CGRectMake(20,0,120,30)];
-        [_locatation setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:@"江苏南京雨花台区" andImageName:@"home_locate"];
+        _locatation =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialName.frame)+8,130,20) andImageFrame:CGRectMake(5,2.5,12,15) andTitleFrame:CGRectMake(17,0,110,20)];
+        [_locatation setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"江苏南京雨花台区" andImageName:@"home_locate"];
         _locatation.titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_locatation];
         
-        _tutorialNum =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_locatation.frame)+15,CGRectGetMaxY(_tutorialName.frame)+8,130,30) andImageFrame:CGRectMake(0,5,19,20) andTitleFrame:CGRectMake(18,0,120,30)];
-        [_tutorialNum setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:@"辅导人数: 50人" andImageName:@"home_people_join"];
+        _tutorialNum =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_locatation.frame)+15,CGRectGetMaxY(_tutorialName.frame)+8,110,20) andImageFrame:CGRectMake(0,1.5,14,17) andTitleFrame:CGRectMake(18,0,90,20)];
+        [_tutorialNum setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"辅导人数: 50人" andImageName:@"home_people_join"];
         _tutorialNum.titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_tutorialNum];
         
@@ -75,6 +69,23 @@
         _underLine.frame=CGRectMake(0,CGRectGetMaxY(_locatation.frame)+5,SCREEN_WIDTH,1);
         _underLine.backgroundColor= [UIColor colorWithHex:@"#E4E5F0"];
         [self addSubview:_underLine];
+        
+        _headPic = [UIImageView new];
+        _headPic.frame=CGRectMake(0,CGRectGetMaxY(_underLine.frame)+3,30,30);
+        _headPic.contentMode=UIViewContentModeScaleAspectFill;
+        _headPic.layer.cornerRadius = _headPic.frame.size.height/2;
+        _headPic.clipsToBounds = YES;
+        _headPic.image=[UIImage imageNamed:@"home_master"];
+        [self addSubview:_headPic];
+        _tutorialTeacher = [UILabel new];
+        _tutorialTeacher.frame=CGRectMake(CGRectGetMaxX(_headPic.frame)+10,CGRectGetMaxY(_underLine.frame)+3,102,30);
+        _tutorialTeacher.backgroundColor = [UIColor whiteColor];
+        _tutorialTeacher.text=@"辅导老师 | 李倩倩";
+        _tutorialTeacher.textColor= [UIColor colorWithHex:@"#101010"];
+        _tutorialTeacher.font =[UIFont fontWithName:@"PingFang SC" size:12];
+        _tutorialTeacher.numberOfLines = 1;
+        [self addSubview:_tutorialTeacher];
+        
     }
     return self;
 }
