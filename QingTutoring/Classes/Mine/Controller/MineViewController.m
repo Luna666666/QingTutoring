@@ -84,7 +84,7 @@
 }
 -(NSMutableArray*)imageArray{
     if (!_imageArray) {
-        _imageArray=[NSMutableArray arrayWithArray:@[@"mine_notify",@"mine_favorite",@"mine_order",@"mine_subject",@"mine_coupon",@"mine_setting"]];
+        _imageArray=[NSMutableArray arrayWithArray:@[@"mine_notify",@"mine_favorite",@"mine_order",@"mine_course",@"mine_coupon",@"mine_setting"]];
     }
     return _imageArray;
 }
