@@ -46,8 +46,11 @@
     [self.view addSubview:self.collectionView];
     
     self.finishBtn=[UIButton buttonWithType:UIButtonTypeCustom];
-    self.finishBtn.frame= CGRectMake(10,CGRectGetMaxY(self.collectionView.frame),SCREEN_WIDTH-20,40);
+    self.finishBtn.frame= CGRectMake(10,SCREEN_HEIGHT-60,SCREEN_WIDTH-20,40);
     self.finishBtn.clipsToBounds = YES;
+    if (ISIphoneX) {
+       self.finishBtn.layer.cornerRadius = 7;
+    }
     self.finishBtn.layer.cornerRadius = 4;
     [self.finishBtn addTarget:self action:@selector(finishBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.finishBtn setTitle:@"完成" forState:UIControlStateNormal];
