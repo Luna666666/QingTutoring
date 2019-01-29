@@ -11,6 +11,7 @@
 		56074C0E21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C0D21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m */; };
 		56074C1121F19EE900C36CCD /* identifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C1021F19EE900C36CCD /* identifyModel.m */; };
 		56074C1421F1BB0700C36CCD /* IdentyInfoFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56074C1321F1BB0700C36CCD /* IdentyInfoFootView.m */; };
+		560E342F21FFF06000B830C7 /* FindView.m in Sources */ = {isa = PBXBuildFile; fileRef = 560E342E21FFF06000B830C7 /* FindView.m */; };
 		56315BDA21EDAD9500018483 /* LYHControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BCE21EDAD9500018483 /* LYHControl.m */; };
 		56315BDB21EDAD9500018483 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BCF21EDAD9500018483 /* UIColor+HexColor.m */; };
 		56315BDC21EDAD9500018483 /* ControlCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56315BD021EDAD9500018483 /* ControlCenter.m */; };
@@ -120,6 +121,8 @@
 		56074C1021F19EE900C36CCD /* identifyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = identifyModel.m; sourceTree = "<group>"; };
 		56074C1221F1BB0700C36CCD /* IdentyInfoFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentyInfoFootView.h; sourceTree = "<group>"; };
 		56074C1321F1BB0700C36CCD /* IdentyInfoFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentyInfoFootView.m; sourceTree = "<group>"; };
+		560E342D21FFF06000B830C7 /* FindView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindView.h; sourceTree = "<group>"; };
+		560E342E21FFF06000B830C7 /* FindView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindView.m; sourceTree = "<group>"; };
 		56315BA621EDAB1500018483 /* QingTutoring-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QingTutoring-Prefix.pch"; sourceTree = "<group>"; };
 		56315BCC21EDAD9500018483 /* MainUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUserInfo.h; sourceTree = "<group>"; };
 		56315BCD21EDAD9500018483 /* MBProgressHUD+TitleHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+TitleHandle.h"; sourceTree = "<group>"; };
@@ -498,6 +501,8 @@
 		56B9457C21F6F3E900AF4287 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				560E342D21FFF06000B830C7 /* FindView.h */,
+				560E342E21FFF06000B830C7 /* FindView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -505,9 +510,9 @@
 		56B9457D21F6F3F000AF4287 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56B9457E21F6F3F000AF4287 /* FindViewController.xib */,
 				56B9457F21F6F3F000AF4287 /* FindViewController.h */,
 				56B9458021F6F3F000AF4287 /* FindViewController.m */,
+				56B9457E21F6F3F000AF4287 /* FindViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1102,6 +1107,7 @@
 				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
 				56E8A6CF21F94C2B005BC892 /* MineTableViewCell.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
+				560E342F21FFF06000B830C7 /* FindView.m in Sources */,
 				56315CE621EDB25400018483 /* UITextField+MadeInChina.m in Sources */,
 				56315BDA21EDAD9500018483 /* LYHControl.m in Sources */,
 				CE2F03E3214FA8BE007FD607 /* CreateView.m in Sources */,
