@@ -14,6 +14,7 @@
 @property (nonatomic, strong)ButtonWithTitle * moreTutorial;//更多辅导
 @property(nonatomic, strong) NSMutableArray *cyclePictureArray;//轮播图片数组
 @property (nonatomic,strong )NSArray *imageURLStringsGroup;//轮播图片数组
+@property (nonatomic, copy)void(^MoreBtnClickBlock)(UIButton *moreBtn);
 @end
 
 

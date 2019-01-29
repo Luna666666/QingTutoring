@@ -14,6 +14,7 @@
     UILabel *_tutorialName;//辅导机构名称
     UILabel *_teachersSize;//师资规模
     ButtonWithTitle*_phone;//联系电话
+    ButtonWithTitle*_hotTutorial;//热门辅导班
     ButtonWithTitle *_locatation;//地点
     ButtonWithTitle *_tutorialNum;//辅导人数
     UIView *_underLine;
@@ -35,7 +36,7 @@
         [self addSubview:_tutorialPic];
         
         _tutorialName = [UILabel new];
-    _tutorialName.frame=CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialPic.frame)+5,90,25);
+    _tutorialName.frame=CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialPic.frame)+5,70,25);
         _tutorialName.text=@"思成辅导班";
         _tutorialName.textColor= [UIColor colorWithHex:@"#101010"];
         _tutorialName.font =[UIFont fontWithName:@"PingFang SC" size:12];
@@ -43,7 +44,7 @@
         [self addSubview:_tutorialName];
         
         _teachersSize = [UILabel new];
-    _teachersSize.frame=CGRectMake(CGRectGetMaxX(_tutorialName.frame),CGRectGetMaxY(_tutorialPic.frame)+5,87,25);
+      _teachersSize.frame=CGRectMake(CGRectGetMaxX(_tutorialName.frame),CGRectGetMaxY(_tutorialPic.frame)+5,87,25);
         _teachersSize.text=@"师资规模:  60人";
         _teachersSize.textColor= [UIColor colorWithHex:@"#101010"];
         _teachersSize.font = [UIFont fontWithName:@"PingFang SC" size:12];
@@ -53,6 +54,11 @@
         _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame)+10,CGRectGetMaxY(_tutorialPic.frame)+5,110,30) andImageFrame:CGRectMake(5,5,12,15) andTitleFrame:CGRectMake(17,3,90,20)];
         [_phone setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"17625902072" andImageName:@"home_phone"];
         [self addSubview:_phone];
+        
+        _hotTutorial =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_phone.frame)+5,CGRectGetMaxY(_tutorialPic.frame)+5,80,30) andImageFrame:CGRectMake(0,5,12,15) andTitleFrame:CGRectMake(12,3,60,20)];
+        _hotTutorial.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [_hotTutorial setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"火热报名" andImageName:@"find_hot"];
+        [self addSubview:_hotTutorial];
         
         _locatation =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialName.frame)+8,130,20) andImageFrame:CGRectMake(0,2.5,12,15) andTitleFrame:CGRectMake(17,0,110,20)];
         [_locatation setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"江苏南京雨花台区" andImageName:@"home_locate"];

@@ -55,7 +55,7 @@
         _grade.backgroundColor= [UIColor colorWithHex:@"#585858"];
         _grade.clipsToBounds = YES;
         _grade.layer.cornerRadius = 4;
-        [_grade setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor whiteColor] andTitle:@"数学" andImageName:@"home_phone"];
+        [_grade setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:10] andColor:[UIColor whiteColor] andTitle:@"数学" andImageName:@"home_phone"];
         [self addSubview:_grade];
         
         _subjectName = [UILabel new];

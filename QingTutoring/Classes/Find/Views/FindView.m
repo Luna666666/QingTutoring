@@ -65,7 +65,9 @@
 #pragma mark--btnClicked
 -(void)moreTutorialClicked:(UIButton*)sender{
     NSLog(@"sss");
-    
+    if (self.MoreBtnClickBlock) {
+        self.MoreBtnClickBlock(sender);
+    }
 }
 
 @end

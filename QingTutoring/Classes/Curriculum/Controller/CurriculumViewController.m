@@ -20,6 +20,10 @@
 @property(nonatomic,strong)UIScrollView *selectBgView;
 @property (nonatomic, strong)UITableView *curriculumTableView;
 @property (nonatomic,strong)NSMutableArray *curriculum_Array;
+@property (nonatomic, strong)NSString*  data1;
+@property (nonatomic, strong)NSString*  data2;
+@property (nonatomic, strong)NSString*  data3;
+@property (nonatomic, strong)NSString*  data4;
 @end
 
 @implementation CurriculumViewController
@@ -73,9 +77,9 @@
         selectBgView.backgroundColor= [UIColor  whiteColor];
         [self.view addSubview:selectBgView];
         NSArray<NSArray *> *selectArray = @[
-                                           @[@"课程",@"语文",@"数学",@"英语",@"物理",@"化学",@"生物"],
-                                           @[@"年龄",@"5-10岁",@"10-15",@"15-20"],
-                                           @[@"距离",@"100米以内",@"200米以内",@"300米以内"]];
+                                           @[@"全部",@"语文",@"数学",@"英语",@"物理",@"化学",@"生物"],
+                                           @[@"全部",@"5-10岁",@"10-15",@"15-20"],
+                                           @[@"全部",@"100米以内",@"200米以内",@"300米以内"]];
         self.selectArray = selectArray;
         for (int j=0; j<selectArray[i].count; j++) {
             UIButton *btn =[ViewManager createBtnWithFrame:CGRectMake(0,j*30,SCREEN_WIDTH,30) andTitle:selectArray[i][j] andBgImageName:nil andTarget:self andAction:@selector(selectBtnClick:)];
@@ -227,7 +231,55 @@
     }
 }
 -(void)selectBtnClick:(UIButton*)btn{
-    
+    ButtonWithTitle * superBtn = (ButtonWithTitle*)[self.view viewWithTag:(100+_superIndex)];
+    UIButton * itemSelectdBtn = self.itemSelectdArray[_superIndex];
+    NSInteger btnIndex = btn.tag - 100 * (_superIndex+2);
+    if (btn == itemSelectdBtn) {
+        self.grayBgView.hidden = true;
+        [UIView animateWithDuration:0.5 animations:^{
+            self.selectBgView.frame = CGRectMake(0,NavigateBarH + 40,SCREEN_WIDTH,0);
+            self.selectBgView = nil;
+        }];
+        
+    }else{
+        [itemSelectdBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor cyanColor] forState:UIControlStateNormal];
+        if ([btn.currentTitle  isEqual: @"全部"]) {
+            switch (_superIndex)
+            {
+                case 0 : superBtn.titleLabel.text=@"推荐";self.data1=@"";break;
+                case 1 : superBtn.titleLabel.text=@"距离";self.data2=@"";break;
+                case 2 : superBtn.titleLabel.text=@"年龄";self.data3=@"";break;
+                case 3 : superBtn.titleLabel.text=@"课程";self.data4=@"";break;
+                default:break;
+            }
+        }else{
+            superBtn.titleLabel.text=btn.currentTitle;
+            switch (_superIndex)
+            {
+                case 0 :
+                    if (btnIndex > 9)
+                    {
+                        self.data1 = [NSString stringWithFormat:@"%ld",btnIndex];
+                    }
+                    else
+                    {
+                        self.data1 = [NSString stringWithFormat:@"0%ld",btnIndex];
+                    }
+                    break;
+                case 1 : self.data3 = [NSString stringWithFormat:@"%ld",btnIndex];;break;
+                case 2 : self.data3 = [NSString stringWithFormat:@"%ld",btnIndex];;break;
+                case 3 : self.data4 = [NSString stringWithFormat:@"%ld",btnIndex];;break;
+                default : break;
+            }
+        }
+        self.itemSelectdArray[_superIndex] = btn;
+        [self requestcurriculumData];
+        self.grayBgView.hidden = YES;
+        [UIView animateWithDuration:0.5 animations:^{
+            self.selectBgView.frame = CGRectMake(0,NavigateBarH +40,SCREEN_WIDTH,0);
+        }];
+    }
     
 }
 -(NSMutableArray *)curriculum_Array{
@@ -237,5 +289,11 @@
     return _curriculum_Array;
     
 }
-
+-(NSMutableArray *)itemSelectdArray{
+    if (!_itemSelectdArray) {
+        _itemSelectdArray = [NSMutableArray array];
+    }
+    return _itemSelectdArray;
+    
+}
 @end

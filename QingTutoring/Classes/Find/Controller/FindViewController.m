@@ -42,6 +42,11 @@
     self.findTableView.showsVerticalScrollIndicator = false;
     self.findTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.findTableView.tableHeaderView = self.findHeadView;
+    __weak __typeof(self) weakSelf= self;
+    self.findHeadView.MoreBtnClickBlock = ^(UIButton *moreBtn) {
+        NSLog(@"查看更对热门辅导班");
+        weakSelf.tabBarController.selectedIndex = 0;
+    };
     [self.view addSubview:self.findTableView];
 }
 -(void)requestTutorialData{
