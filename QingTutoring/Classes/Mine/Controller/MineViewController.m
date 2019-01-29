@@ -23,9 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden =YES;
     self.view.backgroundColor = [UIColor colorWithHex:@"#F5F5F5"];
     [self createTableView];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+     self.navigationController.navigationBar.hidden =YES;
+    
 }
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:YES];

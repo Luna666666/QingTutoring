@@ -32,7 +32,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBarHidden = YES;
     [self createUI];
-    
 }
 -(void)createUI{
     self.accountTF.text = @"17625902072";
