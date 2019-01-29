@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"发现";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFang SC" size:18],NSForegroundColorAttributeName:[UIColor colorWithHex:@"#101010"] }];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createTableView];
     [self requestTutorialData];

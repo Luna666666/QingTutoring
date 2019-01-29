@@ -32,6 +32,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"课程";
     self.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFang SC" size:18],NSForegroundColorAttributeName:[UIColor colorWithHex:@"#101010"] }];
     _superIndex = 0;
     self.view.backgroundColor = [UIColor whiteColor];
     self.grayBgView = [[UIView alloc]initWithFrame:CGRectMake(0,NavigateBarH +40,SCREEN_WIDTH,SCREEN_HEIGHT-64-49)];
@@ -60,13 +61,13 @@
     bgView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:bgView];
     NSArray * titleArray=@[@"课程",@"年龄",@"距离"];
-    float originalX = 10;
+    float originalX = 20;
     float width = 100;
     float titleWidth = width-30;
-    float space = (SCREEN_WIDTH-300-20)/2.0;
+    float space = (SCREEN_WIDTH-300-40)/2.0;
     for (int i=0; i<titleArray.count; i++) {
         ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,15,10,10) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
-        [typeBtn setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:titleArray[i] andImageName:@"home_down"];
+       [typeBtn setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:16] andColor:[UIColor colorWithHex:@"#101010"]andTitle:titleArray[i] andImageName:@"home_down"];
         [typeBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         typeBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         typeBtn.tag = 100+i;
@@ -79,7 +80,7 @@
         NSArray<NSArray *> *selectArray = @[
                                            @[@"全部",@"语文",@"数学",@"英语",@"物理",@"化学",@"生物"],
                                            @[@"全部",@"5-10岁",@"10-15",@"15-20"],
-                                           @[@"全部",@"100米以内",@"200米以内",@"300米以内"]];
+                                           @[@"全部",@"100米内",@"200米内",@"300米内"]];
         self.selectArray = selectArray;
         for (int j=0; j<selectArray[i].count; j++) {
             UIButton *btn =[ViewManager createBtnWithFrame:CGRectMake(0,j*30,SCREEN_WIDTH,30) andTitle:selectArray[i][j] andBgImageName:nil andTarget:self andAction:@selector(selectBtnClick:)];

@@ -46,8 +46,8 @@
     bar.tintColor =[UIColor colorWithRed:0.082 green:0.188 blue:0.325 alpha:1.00];
     for(UITabBarItem *item in bar.items)
     {
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor colorWithHex:@"#9A9FA4"]} forState:UIControlStateNormal];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor colorWithHex:@"#9A9FA4"]} forState:UIControlStateSelected];
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor colorWithHex:@"#949E96"]} forState:UIControlStateNormal];
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor colorWithHex:@"#101010"]} forState:UIControlStateSelected];
         if(item.title.length < 1)
         {
             item.enabled = NO;

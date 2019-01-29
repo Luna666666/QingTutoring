@@ -20,7 +20,7 @@
         self.backgroundColor=[UIColor whiteColor];
         self.userInteractionEnabled=YES;
         _itemIcon = [UIImageView new];
-        _itemIcon.frame=CGRectMake(22,15,20,20);
+        _itemIcon.frame=CGRectMake(22,15,15,15);
         _itemIcon.contentMode=UIViewContentModeScaleAspectFill;
         _itemIcon.clipsToBounds = YES;
         _itemIcon.image=[UIImage imageNamed:@"mine_coupon"];
@@ -30,7 +30,7 @@
         _itemTitle.backgroundColor = [UIColor clearColor];
         _itemTitle.textColor =[UIColor colorWithHex:@"#101010"];
         _itemTitle.numberOfLines =1;
-        _itemTitle.font = [UIFont systemFontOfSize:14];
+        _itemTitle.font = [UIFont fontWithName:@"PingFang SC" size:14];
         [self addSubview:_itemTitle];
         
         _detail = [UIImageView new];

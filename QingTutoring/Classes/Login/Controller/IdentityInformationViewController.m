@@ -26,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"填写身份信息";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFang SC" size:18],NSForegroundColorAttributeName:[UIColor colorWithHex:@"#101010"] }];
+    [self.navigationItem setHidesBackButton:YES];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createUI];
     [self requestIdentifyItemData];
@@ -33,7 +35,7 @@
 -(void)createUI{
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,NavigateBarH+10,SCREEN_WIDTH,SCREEN_HEIGHT-64-49-2) collectionViewLayout:flowLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,NavigateBarH+10,SCREEN_WIDTH,SCREEN_HEIGHT-64-49-10) collectionViewLayout:flowLayout];
     self.collectionView.userInteractionEnabled=YES;
     [self.collectionView registerClass:[IdentyInfoCollectionViewCell class] forCellWithReuseIdentifier:@"identyInfoCollectionViewCell"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -51,7 +53,7 @@
     [self.finishBtn setTitle:@"完成" forState:UIControlStateNormal];
     self.finishBtn.backgroundColor = [UIColor colorWithHex:@"#3BAEFD"];
     [self.finishBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.finishBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    self.finishBtn.titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:14];
     [self.view addSubview:self.finishBtn];
     
 }
@@ -124,7 +126,7 @@
 }
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake((SCREEN_WIDTH - 100) / 3,40);
+    return CGSizeMake((SCREEN_WIDTH - 100) / 3,50);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
@@ -132,7 +134,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-     return CGSizeMake(SCREEN_WIDTH,44);
+     return CGSizeMake(SCREEN_WIDTH,37);
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
     return CGSizeMake(SCREEN_WIDTH,10);

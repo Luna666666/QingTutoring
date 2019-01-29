@@ -33,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _superIndex = 0;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFang SC" size:18],NSForegroundColorAttributeName:[UIColor colorWithHex:@"#101010"] }];
     self.view.backgroundColor = [UIColor whiteColor];
     self.grayBgView = [[UIView alloc]initWithFrame:CGRectMake(0,NavigateBarH +40,SCREEN_WIDTH,SCREEN_HEIGHT-64-49)];
     self.grayBgView.backgroundColor = [UIColor colorWithRed:0.72 green:0.72 blue:0.72 alpha:0.8];
@@ -63,13 +64,13 @@
     bgView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:bgView];
     NSArray * titleArray=@[@"推荐",@"距离",@"年龄",@"课程"];
-    float originalX = 10;
+    float originalX = 20;
     float width = 60;
     float titleWidth = width-10;
-    float space = (SCREEN_WIDTH-240-20)/3.0;
+    float space = (SCREEN_WIDTH-240-40)/3.0;
     for (int i=0; i<titleArray.count; i++) {
         ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,15,10,10) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
-        [typeBtn setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:titleArray[i] andImageName:@"home_down"];
+        [typeBtn setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:16] andColor:[UIColor colorWithHex:@"#101010"]andTitle:titleArray[i] andImageName:@"home_down"];
         [typeBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         typeBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         typeBtn.tag = 100+i;
@@ -304,8 +305,8 @@
 }
 - (ButtonWithTitle*)gradeButton{
     if(!_gradeButton){
-        _gradeButton = [[ButtonWithTitle alloc]initWithFrame:CGRectMake(0,0,60,30) andImageFrame:CGRectMake(52.5,12.5, 7.5, 7.5) andTitleFrame:CGRectMake(0,7.5,52.5, 15)];
-        [_gradeButton setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:@"三年级" andImageName:@"home_right_down"];
+        _gradeButton = [[ButtonWithTitle alloc]initWithFrame:CGRectMake(0,0,55,24) andImageFrame:CGRectMake(50,9.5,5,5) andTitleFrame:CGRectMake(0,0,50,24)];
+        [_gradeButton setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:14] andColor:[UIColor colorWithHex:@"#2C2D2D"]andTitle:@"三年级" andImageName:@"home_right_down"];
         [_gradeButton addTarget:self action:@selector(selectGrade) forControlEvents:UIControlEventTouchUpInside];
         
     }
@@ -313,7 +314,7 @@
 }
 - (ButtonWithTitle*)searchButton{
     if(!_searchButton){
-        _searchButton = [[ButtonWithTitle alloc]initWithFrame:CGRectMake(0,0,15,15) andImageFrame:CGRectMake(0,0,15,15) andTitleFrame:CGRectMake(0,0,0,0)];
+        _searchButton = [[ButtonWithTitle alloc]initWithFrame:CGRectMake(0,0,20,21) andImageFrame:CGRectMake(0,0,20,21) andTitleFrame:CGRectMake(0,0,0,0)];
         [_searchButton setUIWithFont:[UIFont systemFontOfSize:14] andColor:[UIColor blackColor] andTitle:@"" andImageName:@"home_search"];
         [_searchButton addTarget:self action:@selector(searchTutorial) forControlEvents:UIControlEventTouchUpInside];
         

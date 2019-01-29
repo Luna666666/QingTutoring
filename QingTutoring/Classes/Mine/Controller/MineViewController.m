@@ -27,6 +27,11 @@
     self.view.backgroundColor = [UIColor colorWithHex:@"#F5F5F5"];
     [self createTableView];
 }
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:YES];
+     self.navigationController.navigationBar.hidden = NO;
+    
+}
 -(void)createTableView{
     self.mineTableView =[[UITableView alloc]initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT-64-49) style:UITableViewStylePlain];
     self.mineTableView.showsVerticalScrollIndicator = NO;
@@ -99,7 +104,7 @@
             signIn.backgroundColor = [UIColor colorWithHex:@"#FF9800"];
             [signIn setTitle:@"签到" forState:UIControlStateNormal];
             [signIn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            signIn.titleLabel.font = [UIFont systemFontOfSize:12];
+            signIn.titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:12];
             signIn.clipsToBounds=YES;
             signIn.layer.cornerRadius=8;
             [signIn addTarget:self action:@selector(signIn) forControlEvents:UIControlEventTouchUpInside];
@@ -107,14 +112,14 @@
             UILabel *welcome=[[UILabel alloc]initWithFrame:CGRectMake(22,CGRectGetMaxY(signIn.frame)+10,130,20)];
             welcome.text=[NSString stringWithFormat:@"%@",@"欢迎来到箐箐辅导~"];
             welcome.textColor=[UIColor colorWithHex:@"#2C2D2D"];
-            welcome.font=[UIFont systemFontOfSize:12];
+            welcome.font=[UIFont fontWithName:@"PingFang SC" size:12];
             [_headView addSubview:welcome];
     
             UIButton *login=[[UIButton alloc]initWithFrame:CGRectMake(22,CGRectGetMaxY(welcome.frame)+5,70,20)];
             login.backgroundColor = [UIColor colorWithHex:@"#3BAEFD"];
             [login setTitle:@"登录" forState:UIControlStateNormal];
             [login setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            login.titleLabel.font = [UIFont systemFontOfSize:12];
+            login.titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:12];
             login.clipsToBounds=YES;
             login.layer.cornerRadius=8;
             [login addTarget:self action:@selector(loginIn) forControlEvents:UIControlEventTouchUpInside];
@@ -143,29 +148,29 @@
             UILabel *phone=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(userHead.frame)+5,userHead.origin.y+10,90,20)];
             phone.text=[NSString stringWithFormat:@"%@",@"17625902072"];
             phone.textColor=[UIColor colorWithHex:@"#2C2D2D"];
-            phone.font=[UIFont systemFontOfSize:12];
+            phone.font=[UIFont fontWithName:@"PingFang SC" size:14];
             [_headView addSubview:phone];
             
             UIImageView *members = [UIImageView new];
-            members.frame=CGRectMake(CGRectGetMaxX(phone.frame),phone.origin.y,15,15);
+            members.frame=CGRectMake(CGRectGetMaxX(phone.frame)+3,phone.origin.y,15,15);
             members.contentMode=UIViewContentModeScaleAspectFill;
             members.image=[UIImage imageNamed:@"Lv2"];
             [_headView addSubview:members];
             
-            UIButton *improveInformation=[[UIButton alloc]initWithFrame:CGRectMake(phone.origin.x,CGRectGetMaxY(phone.frame)+15,70,15)];
+            UIButton *improveInformation=[[UIButton alloc]initWithFrame:CGRectMake(phone.origin.x,CGRectGetMaxY(phone.frame)+15,60,15)];
             improveInformation.backgroundColor = [UIColor colorWithHex:@"#3BAEFD"];
             [improveInformation setTitle:@"补充资料" forState:UIControlStateNormal];
             [improveInformation  setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            improveInformation .titleLabel.font = [UIFont systemFontOfSize:12];
+            improveInformation .titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:11];
             improveInformation .clipsToBounds=YES;
-            improveInformation .layer.cornerRadius=8;
+            improveInformation .layer.cornerRadius= 5;
             [improveInformation  addTarget:self action:@selector(improveInformation) forControlEvents:UIControlEventTouchUpInside];
             [_headView addSubview:improveInformation ];
             
-            UILabel *grade=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(improveInformation.frame)+5,improveInformation.origin.y-3,57,22)];
+            UILabel *grade=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(improveInformation.frame)+8,improveInformation.origin.y-3,57,22)];
             grade.text=[NSString stringWithFormat:@"%@",@"七年级"];
             grade.textColor=[UIColor colorWithHex:@"#A7A7A7"];
-            grade.font=[UIFont systemFontOfSize:12];
+            grade.font=[UIFont fontWithName:@"PingFang SC" size:13];
             [_headView addSubview:grade];
             
             UIView *underGradeLine=[UIView new];
