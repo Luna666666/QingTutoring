@@ -405,7 +405,6 @@
 			isa = PBXGroup;
 			children = (
 				56315DAA21EDC98900018483 /* MineViewController.h */,
-				56315DAB21EDC98900018483 /* MineViewController.m */,
 				56315DAC21EDC98900018483 /* MineViewController.xib */,
 			);
 			path = Controller;
@@ -614,6 +613,7 @@
 		CE3DC5E8214F948600F32522 = {
 			isa = PBXGroup;
 			children = (
+				56315DAB21EDC98900018483 /* MineViewController.m */,
 				CE3DC5F3214F948600F32522 /* QingTutoring */,
 				CE3DC60C214F948600F32522 /* QingTutoringTests */,
 				CE3DC617214F948600F32522 /* QingTutoringUITests */,

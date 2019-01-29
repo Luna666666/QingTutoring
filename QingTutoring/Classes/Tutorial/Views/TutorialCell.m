@@ -27,16 +27,15 @@
         
         self.backgroundColor = [UIColor whiteColor];
         self.selectionStyle=UITableViewCellSelectionStyleNone;
-        
         _tutorialPic = [UIImageView new];
-        _tutorialPic.frame=CGRectMake(0,0,SCREEN_WIDTH,80);
+        _tutorialPic.frame=CGRectMake(10,0,SCREEN_WIDTH-20,80);
         _tutorialPic.contentMode=UIViewContentModeScaleAspectFill;
         _tutorialPic.clipsToBounds = YES;
         _tutorialPic.image=[UIImage imageNamed:@"home_Tutorial"];
         [self addSubview:_tutorialPic];
         
         _tutorialName = [UILabel new];
-    _tutorialName.frame=CGRectMake(_tutorialPic.frame.origin.x+10,CGRectGetMaxY(_tutorialPic.frame)+5,90,25);
+    _tutorialName.frame=CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialPic.frame)+5,90,25);
         _tutorialName.text=@"思成辅导班";
         _tutorialName.textColor= [UIColor colorWithHex:@"#101010"];
         _tutorialName.font =[UIFont fontWithName:@"PingFang SC" size:12];
@@ -51,11 +50,11 @@
         _teachersSize.numberOfLines = 1;
         [self addSubview:_teachersSize];
         
-        _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame),CGRectGetMaxY(_tutorialPic.frame)+5,110,30) andImageFrame:CGRectMake(5,5,12,15) andTitleFrame:CGRectMake(17,3,90,20)];
+        _phone =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teachersSize.frame)+10,CGRectGetMaxY(_tutorialPic.frame)+5,110,30) andImageFrame:CGRectMake(5,5,12,15) andTitleFrame:CGRectMake(17,3,90,20)];
         [_phone setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"17625902072" andImageName:@"home_phone"];
         [self addSubview:_phone];
         
-        _locatation =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialName.frame)+8,130,20) andImageFrame:CGRectMake(5,2.5,12,15) andTitleFrame:CGRectMake(17,0,110,20)];
+        _locatation =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_tutorialName.frame)+8,130,20) andImageFrame:CGRectMake(0,2.5,12,15) andTitleFrame:CGRectMake(17,0,110,20)];
         [_locatation setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"江苏南京雨花台区" andImageName:@"home_locate"];
         _locatation.titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_locatation];
@@ -71,7 +70,7 @@
         [self addSubview:_underLine];
         
         _headPic = [UIImageView new];
-        _headPic.frame=CGRectMake(0,CGRectGetMaxY(_underLine.frame)+3,30,30);
+        _headPic.frame=CGRectMake(_tutorialPic.frame.origin.x,CGRectGetMaxY(_underLine.frame)+3,30,30);
         _headPic.contentMode=UIViewContentModeScaleAspectFill;
         _headPic.layer.cornerRadius = _headPic.frame.size.height/2;
         _headPic.clipsToBounds = YES;

@@ -68,11 +68,13 @@
     MineTableViewCell *minePageTableViewCell = [tableView dequeueReusableCellWithIdentifier:kMineTableViewCellId];
     if (!minePageTableViewCell) {
         minePageTableViewCell = [[MineTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kMineTableViewCellId];
-        minePageTableViewCell.selectionStyle=UITableViewCellSelectionStyleNone;
     }
     minePageTableViewCell.itemIcon.image = [UIImage imageNamed:self.imageArray[indexPath.row]];
     minePageTableViewCell.itemTitle.text =[NSString stringWithFormat:@"%@",self.titleArray[indexPath.row]];
     return minePageTableViewCell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"jjjj");
 }
 -(NSMutableArray*)titleArray{
     if (!_titleArray) {

@@ -28,14 +28,14 @@
         self.selectionStyle=UITableViewCellSelectionStyleNone;
         
         _tutorialPic = [UIImageView new];
-        _tutorialPic.frame=CGRectMake(0,0,SCREEN_WIDTH,80);
+        _tutorialPic.frame=CGRectMake(10,0,SCREEN_WIDTH-20,80);
         _tutorialPic.contentMode=UIViewContentModeScaleAspectFill;
         _tutorialPic.clipsToBounds = YES;
         _tutorialPic.image=[UIImage imageNamed:@"home_Tutorial"];
         [self addSubview:_tutorialPic];
         
         _headPic = [UIImageView new];
-        _headPic.frame=CGRectMake(0,CGRectGetMaxY(_tutorialPic.frame)+7,45,45);
+        _headPic.frame=CGRectMake(_tutorialPic.origin.x,CGRectGetMaxY(_tutorialPic.frame)+7,30,30);
         _headPic.contentMode=UIViewContentModeScaleAspectFill;
         _headPic.layer.cornerRadius = _headPic.frame.size.height/2;
         _headPic.clipsToBounds = YES;
@@ -51,7 +51,7 @@
         _tutorialTeacher.numberOfLines = 1;
         [self addSubview:_tutorialTeacher];
         
-        _grade =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_tutorialTeacher.frame),_headPic.origin.y+2,42,17) andImageFrame:CGRectZero andTitleFrame:CGRectMake(0,0,42,17)];
+        _grade =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_tutorialTeacher.frame),_tutorialTeacher.origin.y+5,42,15) andImageFrame:CGRectZero andTitleFrame:CGRectMake(0,0,42,17)];
         _grade.backgroundColor= [UIColor colorWithHex:@"#585858"];
         _grade.clipsToBounds = YES;
         _grade.layer.cornerRadius = 4;
