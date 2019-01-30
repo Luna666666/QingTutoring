@@ -65,9 +65,9 @@
     [self.view addSubview:bgView];
     NSArray * titleArray=@[@"推荐",@"距离",@"年龄",@"课程"];
     float originalX = 20;
-    float width = 60;
+    float width = 70;
     float titleWidth = width-10;
-    float space = (SCREEN_WIDTH-240-40)/3.0;
+    float space = (SCREEN_WIDTH-280-40)/3.0;
     for (int i=0; i<titleArray.count; i++) {
         ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,15,10,10) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
         [typeBtn setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:16] andColor:[UIColor colorWithHex:@"#101010"]andTitle:titleArray[i] andImageName:@"home_down"];
@@ -83,9 +83,9 @@
         NSArray<NSArray *> *selectArray = @[
                            @[@"全部"],
                            @[@"全部",
-                            @"100米以内",
-                            @"200米以内",
-                            @"300米以内"],
+                            @"100米内",
+                            @"200米内",
+                            @"300米内"],
                            @[@"全部",@"5-10岁",@"10-15",@"15-20"],
                            @[@"全部",@"语文",@"数学",@"英语",@"物理",@"化学",@"生物"]
                            ];
