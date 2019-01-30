@@ -207,7 +207,7 @@
         [blueView addSubview:userHead];
         
         UIImageView *members = [UIImageView new];
-    members.frame=CGRectMake(CGRectGetMaxX(userHead.frame)-10,CGRectGetMaxY(userHead.frame)-20,15,15);
+        members.frame=CGRectMake(CGRectGetMaxX(userHead.frame)-10,CGRectGetMaxY(userHead.frame)-20,15,15);
         members.contentMode=UIViewContentModeScaleAspectFill;
         members.image=[UIImage imageNamed:@"Lv2"];
         [blueView addSubview:members];
@@ -228,7 +228,7 @@
         [_headView addSubview:immediateCommunicate];
         
         UIImageView *companyLogo = [UIImageView new];
-    companyLogo.frame=CGRectMake(ownTutorialClass.origin.x,CGRectGetMaxY(ownTutorialClass.frame)+10,50,50);
+        companyLogo.frame=CGRectMake(ownTutorialClass.origin.x,CGRectGetMaxY(ownTutorialClass.frame)+10,50,50);
         companyLogo.clipsToBounds = YES;
         companyLogo.layer.cornerRadius = 7;
         companyLogo.contentMode=UIViewContentModeScaleAspectFill;
@@ -237,24 +237,33 @@
         
         NSArray *title_Array = @[@"思成数学辅导班",@"辅导效率:",@"满意",@"数学",@"师资规模:40人",@"已报名:30人"];
         NSArray *image_Array = @[@"find_hot",@"find_hot",@"find_hot",@"find_hot",@"find_hot",@"find_hot"];
+        UIFont *font = [UIFont fontWithName:@"PingFang SC" size:13];
+        UIColor *color = [UIColor colorWithHex:@"#101010"];
         CGFloat btnHeight = 25;
-        for (int i=0; i<title_Array.count; i++) {
-        CGFloat width = [Helper widthOfString:title_Array[i] font:[UIFont systemFontOfSize:13] height:20];
-        CGFloat btnX = CGRectGetMaxX(companyLogo.frame)+10 + (width + 5) *((i % 3));
-        CGFloat btnY =companyLogo.origin.y+ (btnHeight + 1) * ((i / 3));
-        UIButton * hotTutorial = [UIButton buttonWithType:UIButtonTypeCustom];
-        hotTutorial.frame = CGRectMake(btnX, btnY, width,btnHeight);
-        hotTutorial.titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:13];
-        [hotTutorial setTitleColor:[UIColor colorWithHex:@"#101010"] forState:UIControlStateNormal];
-        [hotTutorial setImage:[UIImage imageNamed:image_Array[i]] forState:UIControlStateNormal];
-        hotTutorial.tag = 100+i;
-            hotTutorial.backgroundColor =[UIColor orangeColor];
-        hotTutorial.titleEdgeInsets = UIEdgeInsetsMake(0,0, 0, width-10);
-        hotTutorial.imageEdgeInsets = UIEdgeInsetsMake(0,width-10,0,10);
-        hotTutorial.titleLabel.textAlignment = NSTextAlignmentLeft;
-        [_headView addSubview:hotTutorial];
-        }
+        CGFloat offsetX = CGRectGetMaxX(companyLogo.frame);
+        CGFloat offsetY = CGRectGetMinY(companyLogo.frame);
+        CGFloat marginX = 10;
+        CGFloat marginT = 1;
+        CGFloat lastBtnRight = 0;
         
+        for (int i=0; i<title_Array.count; i++) {
+            CGFloat width = [Helper widthOfString:title_Array[i] font:[UIFont systemFontOfSize:13] height:20] + btnHeight;
+            CGFloat btnX = (i % 3)? (lastBtnRight + marginX): (offsetX + 10);
+            CGFloat btnY = offsetY + (btnHeight + marginT) * ((i / 3));
+            
+            UIButton * hotTutorial = [UIButton buttonWithType:UIButtonTypeCustom];
+            hotTutorial.frame = CGRectMake(btnX, btnY, width,btnHeight);
+            hotTutorial.tag = 100+i;
+            hotTutorial.titleLabel.font = font;
+            [hotTutorial setTitleColor:color forState:UIControlStateNormal];
+            [hotTutorial setImage:[UIImage imageNamed:image_Array[i]] forState:UIControlStateNormal];
+            [hotTutorial setTitle:title_Array[i] forState:UIControlStateNormal];
+            
+            hotTutorial.titleLabel.textAlignment = NSTextAlignmentLeft;
+            [_headView addSubview:hotTutorial];
+            
+            lastBtnRight = hotTutorial.right;
+        }
 }
     return _headView;
 }
