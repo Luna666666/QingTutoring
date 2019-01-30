@@ -237,34 +237,74 @@
         
         NSArray *title_Array = @[@"思成数学辅导班",@"辅导效率:",@"满意",@"数学",@"师资规模:40人",@"已报名:30人"];
         NSArray *image_Array = @[@"find_hot",@"find_hot",@"find_hot",@"find_hot",@"find_hot",@"find_hot"];
-        UIFont *font = [UIFont fontWithName:@"PingFang SC" size:13];
-        UIColor *color = [UIColor colorWithHex:@"#101010"];
-        CGFloat btnHeight = 25;
-        CGFloat offsetX = CGRectGetMaxX(companyLogo.frame);
-        CGFloat offsetY = CGRectGetMinY(companyLogo.frame);
-        CGFloat marginX = 10;
-        CGFloat marginT = 1;
-        CGFloat lastBtnRight = 0;
         
-        for (int i=0; i<title_Array.count; i++) {
-            CGFloat width = [Helper widthOfString:title_Array[i] font:[UIFont systemFontOfSize:13] height:20] + btnHeight;
-            CGFloat btnX = (i % 3)? (lastBtnRight + marginX): (offsetX + 10);
-            CGFloat btnY = offsetY + (btnHeight + marginT) * ((i / 3));
-            
-            UIButton * hotTutorial = [UIButton buttonWithType:UIButtonTypeCustom];
-            hotTutorial.frame = CGRectMake(btnX, btnY, width,btnHeight);
-            hotTutorial.tag = 100+i;
-            hotTutorial.titleLabel.font = font;
-            [hotTutorial setTitleColor:color forState:UIControlStateNormal];
-            [hotTutorial setImage:[UIImage imageNamed:image_Array[i]] forState:UIControlStateNormal];
-            [hotTutorial setTitle:title_Array[i] forState:UIControlStateNormal];
-            
-            hotTutorial.titleLabel.textAlignment = NSTextAlignmentLeft;
-            [_headView addSubview:hotTutorial];
-            
-            lastBtnRight = hotTutorial.right;
-        }
+        [self addTagBtnsToHeadView:_headView
+                            titles:title_Array
+                            images:image_Array
+                        beginPoint:CGPointMake(CGRectGetMaxX(companyLogo.frame) +10,
+                                               CGRectGetMinY(companyLogo.frame))];
 }
     return _headView;
 }
+
+
+- (void)addTagBtnsToHeadView:(UIView *)toHeadView
+                      titles:(NSArray *)titles
+                      images:(NSArray *)images
+                  beginPoint:(CGPoint)beginPoint {
+    if (!titles || titles.count != images.count || titles.count == 0) {
+        NSLog(@"titles has no data...");
+        return;
+    }
+    
+    UIFont *font = [UIFont fontWithName:@"PingFang SC" size:13];
+    UIColor *color = [UIColor colorWithHex:@"#101010"];
+    CGFloat btnHeight = 25;
+    CGFloat offsetX = beginPoint.x;
+    CGFloat offsetY = beginPoint.y;
+    CGFloat marginX = 5;
+    CGFloat marginT = 1;
+    CGFloat lastBtnRight = 0;
+    CGFloat lastBtnTop = 0;
+    CGFloat margin = 15;
+    CGFloat maxWidth = CGRectGetWidth(toHeadView.frame) -margin/3.0;
+    
+    CGFloat imageExtendW = 20;
+    
+    NSInteger index = 0;
+    for (NSString *title in titles) {
+        CGFloat width = [Helper widthOfString:title font:[UIFont systemFontOfSize:13] height:20] + imageExtendW;
+        
+        CGFloat btnX = 0;
+        CGFloat btnY = 0;
+        if (index == 0) {
+            btnX = offsetX;
+            btnY = offsetY;
+            lastBtnTop = btnY;
+        }else if ((lastBtnRight + marginX + width) <= maxWidth) {
+            btnX = lastBtnRight + marginX;
+            btnY = lastBtnTop;
+        }else { //换行
+            btnX = offsetX;
+            btnY = lastBtnTop + marginT + btnHeight;
+            lastBtnTop = btnY;
+            lastBtnRight = btnX;
+        }
+        lastBtnRight = btnX + width;
+        
+        UIButton * hotTutorial = [UIButton buttonWithType:UIButtonTypeCustom];
+        hotTutorial.frame = CGRectMake(btnX, btnY, width,btnHeight);
+        hotTutorial.tag = 100+index;
+        hotTutorial.titleLabel.font = font;
+        [hotTutorial setTitleColor:color forState:UIControlStateNormal];
+        [hotTutorial setImage:[UIImage imageNamed:images[index]] forState:UIControlStateNormal];
+        [hotTutorial setTitle:title forState:UIControlStateNormal];
+        
+        hotTutorial.titleLabel.textAlignment = NSTextAlignmentLeft;
+        [_headView addSubview:hotTutorial];
+        
+        index ++;
+    }
+}
+
 @end
