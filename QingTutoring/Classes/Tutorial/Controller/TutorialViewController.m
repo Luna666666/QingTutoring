@@ -10,6 +10,7 @@
 #import "IdentityInformationViewController.h"
 #import "TutorialCell.h"
 #import "Tutorial.h"
+#import "TutorialDetailViewController.h"
 #define kTutorialTableViewCellId @"tutorialCellId"
 
 @interface TutorialViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -141,6 +142,12 @@
         cell.model=self.tutorial_Array[indexPath.row];
     }
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    TutorialDetailViewController * tutorialDetailVC = [[TutorialDetailViewController alloc] init];
+    tutorialDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:tutorialDetailVC animated:YES];
+    
 }
 -(void)setNavigation{
      self.navigationItem.title = @"辅导班";

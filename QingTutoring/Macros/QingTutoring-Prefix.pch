@@ -44,6 +44,7 @@
 #import "UIUtility.h"
 #import "GlobalCenter.h"
 #import "SDCycleScrollView.h"
+#import "Helper.h"
 
 #endif /* QingTutoring_Prefix_pch */
 

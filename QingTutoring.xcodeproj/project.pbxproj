@@ -36,6 +36,11 @@
 		563650C121F6E92E003CDE33 /* LsyNetworkFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BB21F6E92E003CDE33 /* LsyNetworkFormData.m */; };
 		563650C221F6E92E003CDE33 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BC21F6E92E003CDE33 /* HttpManager.m */; };
 		563650C321F6E92E003CDE33 /* FSUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563650BE21F6E92E003CDE33 /* FSUploadImageView.m */; };
+		5641DA1522013A7A00C97135 /* TutorialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5641DA1322013A7A00C97135 /* TutorialDetailViewController.m */; };
+		5641DA1622013A7A00C97135 /* TutorialDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5641DA1422013A7A00C97135 /* TutorialDetailViewController.xib */; };
+		5641DA1A2201474C00C97135 /* HotTutorialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5641DA182201474C00C97135 /* HotTutorialCell.m */; };
+		5641DA1B2201474C00C97135 /* HotTutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5641DA192201474C00C97135 /* HotTutorialCell.xib */; };
+		5641DA1E220192EC00C97135 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5641DA1D220192EC00C97135 /* Helper.m */; };
 		5655DD6B21F98FF200852D62 /* GlobalCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5655DD6A21F98FF200852D62 /* GlobalCenter.m */; };
 		566E820721F0819400296979 /* IdentityInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566E820621F0819400296979 /* IdentityInformationViewController.m */; };
 		56B9457821F6F32600AF4287 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9457521F6F32600AF4287 /* TutorialViewController.m */; };
@@ -169,6 +174,14 @@
 		563650BD21F6E92E003CDE33 /* LsyNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkManager.h; sourceTree = "<group>"; };
 		563650BE21F6E92E003CDE33 /* FSUploadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSUploadImageView.m; sourceTree = "<group>"; };
 		563650BF21F6E92E003CDE33 /* LsyNetworkFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsyNetworkFormData.h; sourceTree = "<group>"; };
+		5641DA1222013A7A00C97135 /* TutorialDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialDetailViewController.h; sourceTree = "<group>"; };
+		5641DA1322013A7A00C97135 /* TutorialDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutorialDetailViewController.m; sourceTree = "<group>"; };
+		5641DA1422013A7A00C97135 /* TutorialDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetailViewController.xib; sourceTree = "<group>"; };
+		5641DA172201474C00C97135 /* HotTutorialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotTutorialCell.h; sourceTree = "<group>"; };
+		5641DA182201474C00C97135 /* HotTutorialCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotTutorialCell.m; sourceTree = "<group>"; };
+		5641DA192201474C00C97135 /* HotTutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotTutorialCell.xib; sourceTree = "<group>"; };
+		5641DA1C220192E600C97135 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		5641DA1D220192EC00C97135 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		5655DD6921F98FEE00852D62 /* GlobalCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalCenter.h; sourceTree = "<group>"; };
 		5655DD6A21F98FF200852D62 /* GlobalCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalCenter.m; sourceTree = "<group>"; };
 		566E820521F0819400296979 /* IdentityInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityInformationViewController.h; sourceTree = "<group>"; };
@@ -476,6 +489,9 @@
 				56B9457621F6F32600AF4287 /* TutorialViewController.h */,
 				56B9457521F6F32600AF4287 /* TutorialViewController.m */,
 				56B9457721F6F32600AF4287 /* TutorialViewController.xib */,
+				5641DA1222013A7A00C97135 /* TutorialDetailViewController.h */,
+				5641DA1322013A7A00C97135 /* TutorialDetailViewController.m */,
+				5641DA1422013A7A00C97135 /* TutorialDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -495,6 +511,9 @@
 				5632A92921F83096003F9DDB /* TutorialCell.h */,
 				5632A92A21F83096003F9DDB /* TutorialCell.m */,
 				5632A92B21F83096003F9DDB /* TutorialCell.xib */,
+				5641DA172201474C00C97135 /* HotTutorialCell.h */,
+				5641DA182201474C00C97135 /* HotTutorialCell.m */,
+				5641DA192201474C00C97135 /* HotTutorialCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -570,6 +589,8 @@
 		A4A03D0F21F6E03D0031E012 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5641DA1C220192E600C97135 /* Helper.h */,
+				5641DA1D220192EC00C97135 /* Helper.m */,
 				5655DD6A21F98FF200852D62 /* GlobalCenter.m */,
 				5655DD6921F98FEE00852D62 /* GlobalCenter.h */,
 				5632A92221F7F504003F9DDB /* ViewManager.m */,
@@ -991,10 +1012,12 @@
 			files = (
 				CEAD5CF821524B22003A64B3 /* ShareSDKUI.bundle in Resources */,
 				CEAD5CF921524B22003A64B3 /* ShareSDK.bundle in Resources */,
+				5641DA1B2201474C00C97135 /* HotTutorialCell.xib in Resources */,
 				5632A92D21F83096003F9DDB /* TutorialCell.xib in Resources */,
 				56315DB321EDCA3A00018483 /* LoginViewController.xib in Resources */,
 				56B9458921F6F41B00AF4287 /* CurriculumViewController.xib in Resources */,
 				56315DAE21EDC98900018483 /* MineViewController.xib in Resources */,
+				5641DA1622013A7A00C97135 /* TutorialDetailViewController.xib in Resources */,
 				CE3DC601214F948600F32522 /* LaunchScreen.storyboard in Resources */,
 				56B9458121F6F3F100AF4287 /* FindViewController.xib in Resources */,
 				56B9457921F6F32600AF4287 /* TutorialViewController.xib in Resources */,
@@ -1102,8 +1125,11 @@
 				CE53AC7A2150845900066079 /* WWAvatarPicker.m in Sources */,
 				5632A93021F8316C003F9DDB /* Tutorial.m in Sources */,
 				56074C0E21F16DB200C36CCD /* IdentyInfoCollectionViewCell.m in Sources */,
+				5641DA1E220192EC00C97135 /* Helper.m in Sources */,
 				CE2F03D0214FA8BD007FD607 /* QingTutoringNavigationController.m in Sources */,
+				5641DA1A2201474C00C97135 /* HotTutorialCell.m in Sources */,
 				CE2F03D1214FA8BD007FD607 /* QingTutoringTabBarViewController.m in Sources */,
+				5641DA1522013A7A00C97135 /* TutorialDetailViewController.m in Sources */,
 				56074C0B21F169C600C36CCD /* IdentyInfoHeadView.m in Sources */,
 				56E8A6CF21F94C2B005BC892 /* MineTableViewCell.m in Sources */,
 				CE2F03D2214FA8BD007FD607 /* QingTutoringPublicViewController.m in Sources */,
