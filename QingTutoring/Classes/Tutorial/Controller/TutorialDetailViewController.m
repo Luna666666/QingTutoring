@@ -263,6 +263,9 @@
             [_headView addSubview:hotTutorial];
             
             lastBtnRight = hotTutorial.right;
+            if (i== 0 ||i==3) {
+                hotTutorial.imageView.hidden = YES;
+            }
         }
 }
     return _headView;
