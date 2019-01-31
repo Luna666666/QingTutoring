@@ -140,7 +140,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 185;
+    return 70;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HotTutorialCell *cell = [tableView dequeueReusableCellWithIdentifier:kTutorialDetailCellId];
@@ -172,7 +172,8 @@
         blueView.userInteractionEnabled=YES;
         [_headView addSubview:blueView];
         
-        ButtonWithTitle *backTutoria = [[ButtonWithTitle alloc]initWithFrame:CGRectMake(10,20,10,20) andImageFrame:CGRectMake(0,0,20,20) andTitleFrame:CGRectZero];
+        ButtonWithTitle *backTutoria = [[ButtonWithTitle alloc]initWithFrame:CGRectMake(10,20,20,20) andImageFrame:CGRectMake(0,0,20,20) andTitleFrame:CGRectZero];
+        [backTutoria addTarget:self action:@selector(backHome) forControlEvents:UIControlEventTouchUpInside];
         [backTutoria setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:12] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"17625902072" andImageName:@"home_back"];
         [blueView addSubview:backTutoria];
         UILabel *tutorialName=[[UILabel alloc]initWithFrame:CGRectMake(0,backTutoria.origin.y+15,171,25)];
@@ -194,7 +195,7 @@
         ownTutorial.font=[UIFont fontWithName:@"PingFang SC" size:13];
         [blueView addSubview:ownTutorial];
         
-        ButtonWithTitle *certification =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(teacherName.origin.x,CGRectGetMaxY(ownTutorial.frame),95,20) andImageFrame:CGRectMake(0,0,25,20) andTitleFrame:CGRectMake(28,0,70,20)];
+        ButtonWithTitle *certification =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(teacherName.origin.x,CGRectGetMaxY(ownTutorial.frame),95,20) andImageFrame:CGRectMake(0,3,20,17) andTitleFrame:CGRectMake(28,0,70,20)];
         [certification setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor colorWithHex:@"#FFFFFF"] andTitle:@"已认证" andImageName:@"home_certification"];
         certification.titleLabel.textAlignment = NSTextAlignmentLeft;
         [blueView addSubview:certification];
@@ -203,23 +204,23 @@
         userHead.clipsToBounds=YES;
         userHead.backgroundColor = [UIColor whiteColor];
         userHead.layer.cornerRadius = 25;
-        [userHead setBackgroundImage:[UIImage imageNamed:@"mine_master"] forState:UIControlStateNormal];
+        [userHead setBackgroundImage:[UIImage imageNamed:@"home_master"] forState:UIControlStateNormal];
         [blueView addSubview:userHead];
         
         UIImageView *members = [UIImageView new];
-        members.frame=CGRectMake(CGRectGetMaxX(userHead.frame)-10,CGRectGetMaxY(userHead.frame)-20,15,15);
+        members.frame=CGRectMake(CGRectGetMaxX(userHead.frame)-10,CGRectGetMaxY(userHead.frame)-20,20,20);
         members.contentMode=UIViewContentModeScaleAspectFill;
-        members.image=[UIImage imageNamed:@"Lv2"];
+        members.image=[UIImage imageNamed:@"home_member"];
         [blueView addSubview:members];
         
-        UILabel *ownTutorialClass=[[UILabel alloc]initWithFrame:CGRectMake(teacherName.origin.x,CGRectGetMaxY(blueView.frame)+10,89,30)];
+        UILabel *ownTutorialClass=[[UILabel alloc]initWithFrame:CGRectMake(teacherName.origin.x,CGRectGetMaxY(blueView.frame)+10,89,20)];
         ownTutorialClass.text=[NSString stringWithFormat:@"%@",@"所在辅导班"];
         ownTutorialClass.textColor=[UIColor colorWithHex:@"#101010"];;
         ownTutorialClass.font=[UIFont fontWithName:@"PingFang SC" size:13];
         [_headView addSubview:ownTutorialClass];
         
         UIButton *immediateCommunicate=[[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-85,ownTutorialClass.frame.origin.y,70,20)];
-        immediateCommunicate.titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:13];
+        immediateCommunicate.titleLabel.font = [UIFont systemFontOfSize:12];
         [immediateCommunicate setTitle:@"立即沟通" forState:UIControlStateNormal];
         [immediateCommunicate setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         immediateCommunicate.clipsToBounds=YES;
@@ -236,12 +237,55 @@
         [_headView addSubview:companyLogo];
         
         NSArray *title_Array = @[@"思成数学辅导班",@"辅导效率:",@"满意",@"数学",@"师资规模:40人",@"已报名:30人"];
-        NSArray *image_Array = @[@"find_hot",@"find_hot",@"find_hot",@"find_hot",@"find_hot",@"find_hot"];
+        NSArray *image_Array = @[@"",@"find_hot",@"home_satisfy",@"",@"home_shuxian",@"home_shuxian"];
         [self addTagBtnsToHeadView:_headView
                             titles:title_Array
                             images:image_Array
                         beginPoint:CGPointMake(CGRectGetMaxX(companyLogo.frame) +10,
                                                CGRectGetMinY(companyLogo.frame))];
+        
+        UIView *underLine=[UIView new];
+        underLine.frame=CGRectMake(companyLogo.origin.x,_totalHeight+15,SCREEN_WIDTH,1);
+        underLine.backgroundColor= [UIColor colorWithHex:@"#E4E5F0"];
+        [_headView addSubview:underLine];
+        
+        ButtonWithTitle *publishedCourse =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(companyLogo.origin.x,CGRectGetMaxY(underLine.frame)+10,100,20) andImageFrame:CGRectMake(0,0,20,20) andTitleFrame:CGRectMake(26,0,80,20)];
+        [publishedCourse setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"她发布的课程" andImageName:@"home_subject"];
+        publishedCourse.titleLabel.textAlignment = NSTextAlignmentLeft;
+        [_headView addSubview:publishedCourse];
+        
+        ButtonWithTitle *moreCourse =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-55,publishedCourse.origin.y,55,26) andImageFrame:CGRectMake(0,0,0,0) andTitleFrame:CGRectMake(0,0,55,26)];
+        [moreCourse setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor colorWithHex:@"#101010"] andTitle:@"更多" andImageName:@""];
+        moreCourse.titleLabel.textAlignment = NSTextAlignmentLeft;
+        [_headView addSubview:moreCourse];
+        
+        ButtonWithTitle *gradeClass =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(publishedCourse.origin.x,CGRectGetMaxY(publishedCourse.frame)+8,70,25) andImageFrame:CGRectMake(0,0,0,0) andTitleFrame:CGRectMake(0,0,70,25)];
+        [gradeClass setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor colorWithHex:@"#090909"] andTitle:@"七年级数学" andImageName:@""];
+        gradeClass.titleLabel.textAlignment = NSTextAlignmentLeft;
+        [_headView addSubview:gradeClass];
+        
+        ButtonWithTitle *price =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-70,gradeClass.origin.y,55,26) andImageFrame:CGRectMake(0,0,0,0) andTitleFrame:CGRectMake(0,0,55,26)];
+        [price setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor colorWithHex:@"#E51C23"] andTitle:@"100￥/期" andImageName:@""];
+        price.titleLabel.textAlignment = NSTextAlignmentLeft;
+        [_headView addSubview:price];
+        
+        NSArray *information_Array = @[@"南京雨花台区",@"6-17岁",@"剩余:7名额"];
+        NSArray *information_image_Array = @[@"home_locate",@"home_tioajian",@"home_remain"];
+        [self addTagBtnsToHeadView:_headView
+                            titles:information_Array
+                            images:information_image_Array
+                        beginPoint:CGPointMake(gradeClass.origin.x,
+                                               CGRectGetMaxY(price.frame)+5)];
+        UIView *underLocationLine=[UIView new];
+        underLocationLine.frame=CGRectMake(companyLogo.origin.x,_totalHeight+13,SCREEN_WIDTH,1);
+        underLocationLine.backgroundColor= [UIColor colorWithHex:@"#E4E5F0"];
+        [_headView addSubview:underLocationLine];
+        
+        
+        
+        
+        
+        
 }
     return _headView;
 }
@@ -261,7 +305,7 @@
     CGFloat btnHeight = 25;
     CGFloat offsetX = beginPoint.x;
     CGFloat offsetY = beginPoint.y;
-    CGFloat marginX = 5;
+    CGFloat marginX = 8;
     CGFloat marginT = 1;
     CGFloat lastBtnRight = 0;
     CGFloat lastBtnTop = 0;
@@ -303,7 +347,14 @@
         [_headView addSubview:hotTutorial];
         
         index ++;
+        if (index ==titles.count-1) {
+            _totalHeight = CGRectGetMaxY(hotTutorial.frame);
+            NSLog(@"totalHeight:%f",_totalHeight);
+        }
     }
 }
-
+#pragma mark-btnClicked
+-(void)backHome{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

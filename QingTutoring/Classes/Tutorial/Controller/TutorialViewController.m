@@ -31,6 +31,11 @@
 
 @implementation TutorialViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBar.hidden =NO;
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     _superIndex = 0;
@@ -71,7 +76,7 @@
     float space = (SCREEN_WIDTH-280-40)/3.0;
     for (int i=0; i<titleArray.count; i++) {
         ButtonWithTitle *typeBtn =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(originalX+(i)*(width+space),0,width,40) andImageFrame:CGRectMake(titleWidth+5,15,10,10) andTitleFrame:CGRectMake(0,0,titleWidth, 40)];
-        [typeBtn setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:16] andColor:[UIColor colorWithHex:@"#101010"]andTitle:titleArray[i] andImageName:@"home_down"];
+        [typeBtn setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:15] andColor:[UIColor colorWithHex:@"#101010"]andTitle:titleArray[i] andImageName:@"home_down"];
         [typeBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         typeBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         typeBtn.tag = 100+i;
