@@ -35,7 +35,7 @@
         time.font=[UIFont fontWithName:@"PingFang SC" size:13];
         [self addSubview:time];
         
-        UILabel *signUp=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(headPic.frame),CGRectGetMaxY(tutorialName.frame),80,20)];
+        UILabel *signUp=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(headPic.frame)+5,CGRectGetMaxY(tutorialName.frame),80,20)];
         signUp.text=[NSString stringWithFormat:@"%@",@"杨志凯报了名"];
         signUp.textColor=[UIColor colorWithHex:@"#4C494D"];
         signUp.font=[UIFont fontWithName:@"PingFang SC" size:12];

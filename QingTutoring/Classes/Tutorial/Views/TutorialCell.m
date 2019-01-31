@@ -30,7 +30,7 @@
         self.selectionStyle=UITableViewCellSelectionStyleNone;
         _tutorialPic = [UIImageView new];
         _tutorialPic.frame=CGRectMake(10,5,SCREEN_WIDTH-20,80);
-        _tutorialPic.contentMode=UIViewContentModeScaleAspectFill;
+        _tutorialPic.contentMode=  UIViewContentModeScaleToFill;
         _tutorialPic.clipsToBounds = YES;
         _tutorialPic.image=[UIImage imageNamed:@"home_Tutorial"];
         [self addSubview:_tutorialPic];

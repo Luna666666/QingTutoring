@@ -10,7 +10,7 @@
 #import "TutorialCell.h"
 #import "Tutorial.h"
 #import "FindView.h"
-
+#import "TutorialDetailViewController.h"
 #define kFindTableViewCellId @"findCellId"
 
 @interface FindViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -142,6 +142,11 @@
         cell.model=self.find_Array[indexPath.row];
     }
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    TutorialDetailViewController * tutorialDetailVC = [[TutorialDetailViewController alloc] init];
+    tutorialDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:tutorialDetailVC animated:YES];
 }
 -(NSMutableArray *)find_Array{
     if (!_find_Array) {

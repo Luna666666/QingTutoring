@@ -179,24 +179,25 @@
         UILabel *tutorialName=[[UILabel alloc]initWithFrame:CGRectMake(0,backTutoria.origin.y+15,171,25)];
         tutorialName.center = CGPointMake(_headView.frame.size.width/2,backTutoria.origin.y);
         tutorialName.text=[NSString stringWithFormat:@"%@",@"杨倩倩@思成辅导班"];
-        tutorialName.textColor=[UIColor colorWithHex:@"#FFFFFF"];
+        tutorialName.textColor=[UIColor whiteColor];
         tutorialName.font=[UIFont fontWithName:@"PingFang SC" size:14];
         [blueView addSubview:tutorialName];
         
         UILabel *teacherName=[[UILabel alloc]initWithFrame:CGRectMake(backTutoria.origin.x+20,CGRectGetMaxY(tutorialName.frame)+10,195,30)];
         teacherName.text=[NSString stringWithFormat:@"%@",@"杨倩倩.数学辅导一级名师"];
-        teacherName.textColor=[UIColor colorWithHex:@"#FFFFFF"];;
+        teacherName.textColor=[UIColor whiteColor];
+        
         teacherName.font=[UIFont fontWithName:@"PingFang SC" size:13];
         [blueView addSubview:teacherName];
         
         UILabel *ownTutorial=[[UILabel alloc]initWithFrame:CGRectMake(teacherName.origin.x,CGRectGetMaxY(teacherName.frame),110,30)];
         ownTutorial.text=[NSString stringWithFormat:@"%@",@"思成辅导班"];
-        ownTutorial.textColor=[UIColor colorWithHex:@"#FFFFFF"];;
+        ownTutorial.textColor=[UIColor whiteColor];;
         ownTutorial.font=[UIFont fontWithName:@"PingFang SC" size:13];
         [blueView addSubview:ownTutorial];
         
         ButtonWithTitle *certification =  [[ButtonWithTitle alloc]initWithFrame:CGRectMake(teacherName.origin.x,CGRectGetMaxY(ownTutorial.frame),95,20) andImageFrame:CGRectMake(0,3,20,17) andTitleFrame:CGRectMake(28,0,70,20)];
-        [certification setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor colorWithHex:@"#FFFFFF"] andTitle:@"已认证" andImageName:@"home_certification"];
+        [certification setUIWithFont:[UIFont fontWithName:@"PingFang SC" size:13] andColor:[UIColor whiteColor] andTitle:@"已认证" andImageName:@"home_certification"];
         certification.titleLabel.textAlignment = NSTextAlignmentLeft;
         [blueView addSubview:certification];
         

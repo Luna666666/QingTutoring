@@ -9,7 +9,7 @@
 #import "CurriculumViewController.h"
 #import "curriculumCell.h"
 #import "curriculum.h"
-
+#import "TutorialDetailViewController.h"
 #define kCurriculumTableViewCellId @"curriculumCellId"
 
 @interface CurriculumViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -133,6 +133,11 @@
         cell.model=self.curriculum_Array[indexPath.row];
     }
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    TutorialDetailViewController * tutorialDetailVC = [[TutorialDetailViewController alloc] init];
+    tutorialDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:tutorialDetailVC animated:YES];
 }
 -(void)requestcurriculumData{
     NSDictionary * curriculum_Dic = @{
