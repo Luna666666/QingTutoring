@@ -11,7 +11,7 @@
 #import "Tutorial.h"
 #import "HotTutorialCell.h"
 #define kTutorialDetailCellId @"kTutorialDetailCellId"
-
+static const CGFloat MJDuration = 1.0;
 @interface TutorialDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)UIView *headView;
@@ -37,6 +37,18 @@
     self.view.backgroundColor = [UIColor colorWithHex:@"#F5F5F5"];
     [self createTableView];
     [self requestTutorialDetail];
+    // 下拉刷新
+    __weak __typeof(self) weakSelf = self;
+    self.tableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self.registrationArray removeAllObjects];
+        [self requestTutorialDetail];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.tableView reloadData];
+            // 结束刷新
+            [weakSelf.tableView.mj_header endRefreshing];
+        });
+    }];
+    [self.tableView.mj_header beginRefreshing];
 }
 -(void)requestTutorialDetail{
     self.detailDic = @{
@@ -102,11 +114,12 @@
         Tutorial *model = [Tutorial initWithDict:dict];
         [self.registrationArray addObject:model];
     }
+    [self.tableView.mj_header endRefreshing];
     [self.tableView reloadData];
     
 }
 -(void)createTableView{
-    self.tableView =[[UITableView alloc]initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT) style:UITableViewStylePlain];
+    self.tableView =[[UITableView alloc]initWithFrame:CGRectMake(0,statusBarH,SCREEN_WIDTH,SCREEN_HEIGHT) style:UITableViewStylePlain];
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.showsHorizontalScrollIndicator = NO;
     self.tableView.backgroundColor=[UIColor colorWithHex:@"#F5F5F5"];

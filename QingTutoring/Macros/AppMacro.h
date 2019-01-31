@@ -35,6 +35,4 @@
 #define USER_PASSWORD [[NSUserDefaults standardUserDefaults] objectForKey:@"password"]
 #define SVPERROR @"你的网络在路上..."
 #define SVPLOADING @"拼命加载中..."
-
-
 #endif /* AppMacro_h */

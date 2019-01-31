@@ -12,7 +12,7 @@
 #import "Tutorial.h"
 #import "TutorialDetailViewController.h"
 #define kTutorialTableViewCellId @"tutorialCellId"
-
+static const CGFloat MJDuration = 1.0;
 @interface TutorialViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)ButtonWithTitle * gradeButton;
 @property(nonatomic,strong)ButtonWithTitle * searchButton;
@@ -49,6 +49,18 @@
     [self selectView];
     [self createTableView];
     [self requestTutorialData];
+    // 下拉刷新
+    __weak __typeof(self) weakSelf = self;
+    self.tutorialTableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self.self.tutorial_Array removeAllObjects];
+        [self requestTutorialData];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.tutorialTableView reloadData];
+            // 结束刷新
+            [weakSelf.tutorialTableView.mj_header endRefreshing];
+        });
+    }];
+    [self.tutorialTableView.mj_header beginRefreshing];
     
 }
 -(void)createTableView{
@@ -215,8 +227,8 @@
         Tutorial *model = [Tutorial initWithDict:dict];
         [self.tutorial_Array addObject:model];
     }
+    [self.tutorialTableView.mj_header endRefreshing];
     [self.tutorialTableView reloadData];
-    
 }
 
 -(void)selectGrade{

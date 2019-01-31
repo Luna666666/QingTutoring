@@ -11,7 +11,7 @@
 #import "curriculum.h"
 #import "TutorialDetailViewController.h"
 #define kCurriculumTableViewCellId @"curriculumCellId"
-
+static const CGFloat MJDuration = 1.0;
 @interface CurriculumViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UIView * grayBgView;
 @property(nonatomic,strong)NSMutableArray<UIButton *> *itemSelectdArray;
@@ -42,6 +42,18 @@
     [self selectView];
     [self createTableView];
     [self requestcurriculumData];
+    // 下拉刷新
+    __weak __typeof(self) weakSelf = self;
+    self.curriculumTableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self.curriculum_Array removeAllObjects];
+        [self requestcurriculumData];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.curriculumTableView reloadData];
+            // 结束刷新
+            [weakSelf.curriculumTableView.mj_header endRefreshing];
+        });
+    }];
+    [self.curriculumTableView.mj_header beginRefreshing];
 }
 -(void)createTableView{
     self.curriculumTableView =[[UITableView alloc]initWithFrame:CGRectMake(0,NavigateBarH+40,SCREEN_WIDTH,SCREEN_HEIGHT-64-49-40) style:UITableViewStylePlain];
@@ -193,6 +205,7 @@
         curriculum *model = [curriculum initWithDict:dict];
         [self.curriculum_Array addObject:model];
     }
+    [self.curriculumTableView.mj_header endRefreshing];
     [self.curriculumTableView reloadData];
     
 }
