@@ -44,12 +44,11 @@ APP Store线上相关作品,排名不分先后
 * [DCApp](https://itunes.apple.com/cn/app/id1250284233?mt=8)
 
 ## 相关截图
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/Simulator%20Screen%20Shot%20-%20iPhone%206s%20-%202019-03-04%20at%2016.19.24.png)
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/Simulator%20Screen%20Shot%20-%20iPhone%206s%20-%202019-03-04%20at%2013.49.55.png)
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/58E15C8EEECB7D7554B3C82C72C02E57.png)
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/8E6B6046DE82F7F7F7ADDBBC619EFB38.png)
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/C74A9041B4D81565F89956CE61E1D82F.png)
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/E1883B970A55457DE40E3FF6C45B1971.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/C18540DAE51CF4E54331B4829162CA60.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/B21D97DE974B1657CDA1A627BC452D06.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/8EC840A2C9A8796B6B6D011C00410BCC.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/4DC4E748ACEA6A73E26E029B040FF0FA.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/27BD139D6E40C9C3060A5DD6F8E7D6D2.png)
 
 # 你的Star是我更新的动力，使用过程如果有什么问题或者有什么新的建议，可以issues,我会及时回复大家
 # 觉得我写的不错，欢迎留言与打赏，金额随意，喝杯小茶,让我知道我的努力有价值，你的留言与打赏就是最好的反馈，让我更有动力继续分享。
