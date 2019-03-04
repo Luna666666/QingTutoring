@@ -29,7 +29,7 @@
         tutorialName.font=[UIFont systemFontOfSize:14];
         [self addSubview:tutorialName];
         
-        UILabel *time=[[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-50,tutorialName.origin.y,50,25)];
+        UILabel *time=[[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-50,tutorialName.frame.origin.y,50,25)];
         time.text=[NSString stringWithFormat:@"%@",@"刚刚"];
         time.textColor=[UIColor colorWithHex:@"#4C494D"];
         time.font=[UIFont fontWithName:@"PingFang SC" size:13];

@@ -11,6 +11,7 @@
 #import "TutorialCell.h"
 #import "Tutorial.h"
 #import "TutorialDetailViewController.h"
+#import "FaceVerifyViewController.h"
 #define kTutorialTableViewCellId @"tutorialCellId"
 static const CGFloat MJDuration = 1.0;
 @interface TutorialViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -237,7 +238,8 @@ static const CGFloat MJDuration = 1.0;
     [self.navigationController pushViewController:selectGrade animated:YES];
 }
 -(void)searchTutorial{
-    NSLog(@"开始搜索");
+//    FaceVerifyViewController* faceVerify=[[FaceVerifyViewController alloc] init];
+//    [self.navigationController pushViewController:faceVerify animated:YES];
 }
 -(void)typeBtnClick:(ButtonWithTitle*)btn{
     [self.view bringSubviewToFront:self.grayBgView];

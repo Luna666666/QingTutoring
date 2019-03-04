@@ -9,21 +9,25 @@
 #ifndef QingTutoring_Prefix_pch
 #define QingTutoring_Prefix_pch
 
-#define DEBUGLOG(...) printf("[文件名:%s] [函数名:%s] [行号:%d] %s\n",__FILE__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:__VA_ARGS__]UTF8String])
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
 
-#import <Masonry/Masonry.h>
+#define DEBUGLOG(...) printf("[文件名:%s] [函数名:%s] [行号:%d] %s\n",__FILE__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:__VA_ARGS__]UTF8String])
 #import "AppMacro.h"
 #import "VendorMacro.h"
+#import <YYKit/YYKit.h>
+#import <YYModel/YYModel.h>
 #import "NotificationMacro.h"
+#import <Masonry.h>
 #import "UtilsMacro.h"
 #import "ButtonWithTitle.h"
 #import "LYHControl.h"
 #import "AppDelegate.h"
 #import "IQKeyboardManager.h"
-#import "Masonry.h"
 #import "UIColor+HexColor.h"
 #import "MBProgressHUD+TitleHandle.h"
-#import <YYKit/YYKit.h>
 #import "LsyNetworkManager.h"
 #import "MBProgressHUD+TitleHandle.h"
 #import "CustomAlertView.h"
@@ -45,6 +49,9 @@
 #import "GlobalCenter.h"
 #import "SDCycleScrollView.h"
 #import "Helper.h"
+#import <iflyMSC/IFlyMSC.h>
+#import "UIView+Toast.h"
+#import "UIImage+Extensions.h"
 
 #endif /* QingTutoring_Prefix_pch */
 

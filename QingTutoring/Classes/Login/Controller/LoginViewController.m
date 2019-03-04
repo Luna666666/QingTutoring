@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "QingTutoringTabBarViewController.h"
+#import "JPUSHService.h"
 
 @interface LoginViewController ()
 
@@ -56,6 +57,15 @@
     self.underPasswordLine.backgroundColor = [UIColor lightGrayColor];
 }
 - (IBAction)loginBtnClicked:(UIButton *)sender {
+    [JPUSHService setAlias:@"141fe1da9ea1c71a79" completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
+        //设置别名成功后，code值为0
+        NSLog(@"++++++++rescode: %ld,  \ntags: %@, \nalias: %@\n", (long)iResCode, @"tag" , iAlias);
+    } seq:0];
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    [user setObject:self.accountTF.text forKey:@"account"];
+    [user setObject:self.verifyCodeTF.text forKey:@"password"];
+    [user synchronize];
+    
     QingTutoringTabBarViewController *tabBarVC = [QingTutoringTabBarViewController new];
     [App window].rootViewController = tabBarVC;
 }

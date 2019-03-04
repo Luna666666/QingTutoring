@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
-#import "FSUploadImageView.h"
 
 typedef void(^ConstructingBodyBlock)(id<AFMultipartFormData> formData);
 typedef void(^SuccessBlock)(NSURLSessionDataTask *operation, id responseObject);

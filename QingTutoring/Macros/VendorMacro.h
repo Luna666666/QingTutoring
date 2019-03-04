@@ -23,7 +23,7 @@
 
 
 //极光key
-#define kJPush_App_Key @"fa48ab44668fc575a3b4fc15"
+#define kJPush_App_Key @"893bb97d28f7026ba2dde756"
 #define kJPush_Channel @"App Store"
 //百度key
 #define kBaidu_APP_Key @"K010r0lott3wAlMHdWZGb87npZoWRCij"

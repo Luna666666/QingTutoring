@@ -10,6 +10,8 @@
 #import "MineTableViewCell.h"
 #import "IdentityInformationViewController.h"
 #import "LoginViewController.h"
+#import "JPUSHService.h"
+#import "FaceVerifyViewController.h"
 #define kMineTableViewCellId @"kMineTableViewCellId"
 
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -37,7 +39,7 @@
     
 }
 -(void)createTableView{
-    self.mineTableView =[[UITableView alloc]initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT-64-49) style:UITableViewStylePlain];
+    self.mineTableView =[[UITableView alloc]initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT) style:UITableViewStylePlain];
     self.mineTableView.showsVerticalScrollIndicator = NO;
     self.mineTableView.showsHorizontalScrollIndicator = NO;
     self.mineTableView.backgroundColor=[UIColor colorWithHex:@"#F5F5F5"];
@@ -83,17 +85,21 @@
     return minePageTableViewCell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"jjjj");
+    if (indexPath.row==self.titleArray.count-1) {
+        FaceVerifyViewController * faceVerifyVC =[FaceVerifyViewController new];
+        faceVerifyVC.hidesBottomBarWhenPushed  = YES;
+        [self.navigationController pushViewController:faceVerifyVC animated:YES];
+    }
 }
 -(NSMutableArray*)titleArray{
     if (!_titleArray) {
-        _titleArray=[NSMutableArray arrayWithArray:@[@"消息通知",@"我的收藏",@"我的订单",@"我的课程",@"我的优惠券",@"设置"]];
+        _titleArray=[NSMutableArray arrayWithArray:@[@"消息通知",@"我的收藏",@"我的订单",@"我的课程",@"我的优惠券",@"设置",@"人脸识别"]];
     }
     return _titleArray;
 }
 -(NSMutableArray*)imageArray{
     if (!_imageArray) {
-        _imageArray=[NSMutableArray arrayWithArray:@[@"mine_notify",@"mine_favorite",@"mine_order",@"mine_course",@"mine_coupon",@"mine_setting"]];
+        _imageArray=[NSMutableArray arrayWithArray:@[@"mine_notify",@"mine_favorite",@"mine_order",@"mine_course",@"mine_coupon",@"mine_setting",@"mine_face_recognize"]];
     }
     return _imageArray;
 }
@@ -163,7 +169,7 @@
             
             UIButton *improveInformation=[[UIButton alloc]initWithFrame:CGRectMake(phone.origin.x,CGRectGetMaxY(phone.frame)+15,60,15)];
             improveInformation.backgroundColor = [UIColor colorWithHex:@"#3BAEFD"];
-            [improveInformation setTitle:@"补充资料" forState:UIControlStateNormal];
+            [improveInformation setTitle:@"退出登录" forState:UIControlStateNormal];
             [improveInformation  setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             improveInformation .titleLabel.font = [UIFont fontWithName:@"PingFang SC" size:11];
             improveInformation .clipsToBounds=YES;
@@ -187,9 +193,16 @@
     return _headView;
 }
 -(void)improveInformation{
-    IdentityInformationViewController * identityInformationVC = [[IdentityInformationViewController alloc] init];
-    identityInformationVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:identityInformationVC animated:YES];
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    [user removeObjectForKey:@"account"];
+    [user removeObjectForKey:@"password"];
+    [user synchronize];
+    [JPUSHService deleteAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {NSLog(@"rescode: %ld, \ntags: %@, \nalias: %@\n", (long)iResCode, @"tag" , iAlias);} seq:0];
+    LoginViewController *loginVC = [[LoginViewController alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    nav.navigationBarHidden =YES;
+    [self.tabBarController dismissViewControllerAnimated:NO completion:nil];
+    self.view.window.rootViewController = nav;
 }
 -(void)choosePhotosView{
     NSLog(@"choosePhotosView");
@@ -198,8 +211,6 @@
     NSLog(@"signIn");
 }
 -(void)loginIn{
-    LoginViewController * loginVC = [[LoginViewController alloc] init];
-    loginVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:loginVC animated:YES];
+   
 }
 @end

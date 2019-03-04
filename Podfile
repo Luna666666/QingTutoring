@@ -17,6 +17,7 @@ target 'QingTutoring' do
  pod 'AFNetworking'
  pod 'YYKit', '~> 1.0.9'
  pod 'YYModel'
+ pod 'Masonry'
 
 # Pods for QingTutoring
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define APPID @"appid"
+#define APPIDs @"appid"
 #define APPKEY @"appkey"
 #define SIG @"SIG"
 #define RT @"RT"

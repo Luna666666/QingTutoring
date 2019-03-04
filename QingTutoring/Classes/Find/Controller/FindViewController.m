@@ -30,20 +30,15 @@ static const CGFloat MJDuration = 1.0;
     [self createTableView];
     [self requestTutorialData];
     // 下拉刷新
-    __weak __typeof(self) weakSelf = self;
-    self.findTableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self.self.find_Array removeAllObjects];
-        [self requestTutorialData];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [weakSelf.findTableView reloadData];
-            // 结束刷新
-            [weakSelf.findTableView.mj_header endRefreshing];
-        });
-    }];
-    [self.findTableView.mj_header beginRefreshing];
+//    __weak __typeof(self) weakSelf = self;
+//    self.findTableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        [self.find_Array removeAllObjects];
+//        [self requestTutorialData];
+
+//    [self.findTableView.mj_header beginRefreshing];
 }
 -(void)createTableView{
-    self.findTableView =[[UITableView alloc]initWithFrame:CGRectMake(0,NavigateBarH,SCREEN_WIDTH,SCREEN_HEIGHT-64-49) style:UITableViewStylePlain];
+    self.findTableView =[[UITableView alloc]initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT-49) style:UITableViewStylePlain];
     self.findTableView.showsVerticalScrollIndicator = NO;
     self.findTableView.showsHorizontalScrollIndicator = NO;
     self.findTableView.backgroundColor=[UIColor colorWithHex:@"#F5F5F5"];
@@ -120,7 +115,7 @@ static const CGFloat MJDuration = 1.0;
                                                          @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
                                                          ]];
     self.findHeadView.modFindCycleScrollView.imageURLStringsGroup = _homeCyclePicArray;
-    [self.findTableView.mj_header endRefreshing];
+//    [self.findTableView.mj_header endRefreshing];
     [self.findTableView reloadData];
     
 }
