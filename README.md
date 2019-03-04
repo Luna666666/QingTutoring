@@ -44,7 +44,7 @@ APP Store线上相关作品,排名不分先后
 * [DCApp](https://itunes.apple.com/cn/app/id1250284233?mt=8)
 
 ## 相关截图
-![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/Simulator%20Screen%20Shot%20-%20iPhone%206s%20-%202019-03-04%20at%2013.49.33.png)
+![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/Simulator%20Screen%20Shot%20-%20iPhone%206s%20-%202019-03-04%20at%2016.19.24.png)
 ![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/Simulator%20Screen%20Shot%20-%20iPhone%206s%20-%202019-03-04%20at%2013.49.55.png)
 ![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/58E15C8EEECB7D7554B3C82C72C02E57.png)
 ![mahua](https://github.com/MicahelChan/QingTutoring/blob/master/Picture/8E6B6046DE82F7F7F7ADDBBC619EFB38.png)
