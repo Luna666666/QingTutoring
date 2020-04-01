@@ -1,7 +1,7 @@
 # QingTutoring
 
 ## QingTutoring是什么?
-一个基于Objective-C语言开发的高内聚低耦合的iOS开发项目框架
+一个基于Objective-C语言开发的高内聚低耦合的iOS开发项目学习框架
 ## QingTutoring有哪些功能？
 
 * 辅导班`辅导班`功能
@@ -21,7 +21,7 @@
 ## 有问题反馈
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 * 邮件(951123604@qq.com)
-* QQ: 951123604
+* QQ: (951123604)
 * weibo: [@xiaoqiang是个小疯子](https://weibo.com/p/1005055732746027/home?from=page_100505&mod=TAB#place)
 * twitter: [@CharlesDing8](https://twitter.com/CharlesDing8)
 
